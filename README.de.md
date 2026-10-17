@@ -6,8 +6,10 @@ Bildergalerien mit zentraler Pflege im Backend-Modul „Content > Galerien“: G
 hochladen und sortieren, Bilder und Galerien ausblenden. Galerien hängen nicht an Seiten.
 
 **Live-Demo:** https://demotypo14.conrat-projects.de/fotogalerie ·
-**Dokumentation (englisch):** [Documentation/](Documentation/Index.rst) ·
-**Produktseite:** https://somesolutions.de/typo3-bildergalerie/
+**Dokumentation (englisch):** https://docs.typo3.org/p/conratwebsolutions/crgalerie/main/en-us/ ·
+**Produktseite:** https://somesolutions.de/typo3-bildergalerie/ ·
+**TER:** https://extensions.typo3.org/extension/crgalerie ·
+**Packagist:** https://packagist.org/packages/conratwebsolutions/crgalerie
 
 | Mosaik in Zeilen | Raster |
 |---|---|

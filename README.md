@@ -14,8 +14,10 @@ place and content elements display them anywhere.
 - No jQuery, works with TYPO3’s Content Security Policy, English and German included
 
 **Live demo:** https://demotypo14.conrat-projects.de/fotogalerie ·
-**Documentation:** [Documentation/](Documentation/Index.rst) (published on docs.typo3.org after the TER release) ·
-**Product page:** https://somesolutions.de/typo3-bildergalerie/
+**Documentation:** https://docs.typo3.org/p/conratwebsolutions/crgalerie/main/en-us/ ·
+**Product page:** https://somesolutions.de/typo3-bildergalerie/ ·
+**TER:** https://extensions.typo3.org/extension/crgalerie ·
+**Packagist:** https://packagist.org/packages/conratwebsolutions/crgalerie
 
 | Mosaic in rows | Grid |
 |---|---|
