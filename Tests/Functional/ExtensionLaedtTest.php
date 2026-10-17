@@ -10,7 +10,7 @@ use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 final class ExtensionLaedtTest extends FunctionalTestCase
 {
-    protected array $testExtensionsToLoad = ['conrat/crgalerie'];
+    protected array $testExtensionsToLoad = ['conratwebsolutions/crgalerie'];
 
     #[Test]
     public function extensionIstGeladenUndTabellenExistieren(): void

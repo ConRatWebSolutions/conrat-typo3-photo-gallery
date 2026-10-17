@@ -8,7 +8,7 @@ ConRat Photo Gallery
     crgalerie
 
 :Package name:
-    conrat/crgalerie
+    conratwebsolutions/crgalerie
 
 :Version:
     |release|

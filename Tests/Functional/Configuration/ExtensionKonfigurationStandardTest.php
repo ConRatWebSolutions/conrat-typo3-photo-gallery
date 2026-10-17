@@ -10,7 +10,7 @@ use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 final class ExtensionKonfigurationStandardTest extends FunctionalTestCase
 {
-    protected array $testExtensionsToLoad = ['conrat/crgalerie'];
+    protected array $testExtensionsToLoad = ['conratwebsolutions/crgalerie'];
 
     protected array $configurationToUseInTestInstance = [
         'EXTENSIONS' => [

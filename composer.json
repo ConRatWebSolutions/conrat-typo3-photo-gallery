@@ -1,5 +1,5 @@
 {
-    "name": "conrat/crgalerie",
+    "name": "conratwebsolutions/crgalerie",
     "type": "typo3-cms-extension",
     "description": "ConRat Photo Gallery - image galleries maintained centrally in a backend module, with responsive images and an accessible lightbox",
     "license": "GPL-2.0-or-later",

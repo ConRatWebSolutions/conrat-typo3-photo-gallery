@@ -16,7 +16,7 @@ final class BildVerarbeitungTest extends FunctionalTestCase
 {
     use TestbildTrait;
 
-    protected array $testExtensionsToLoad = ['conrat/crgalerie'];
+    protected array $testExtensionsToLoad = ['conratwebsolutions/crgalerie'];
 
     protected array $configurationToUseInTestInstance = [
         'GFX' => [

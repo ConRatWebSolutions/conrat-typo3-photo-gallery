@@ -33,7 +33,7 @@ place and content elements display them anywhere.
 ## Installation
 
 ```bash
-composer require conrat/crgalerie
+composer require conratwebsolutions/crgalerie
 vendor/bin/typo3 extension:setup
 ```
 

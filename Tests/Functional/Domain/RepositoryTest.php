@@ -18,7 +18,7 @@ final class RepositoryTest extends FunctionalTestCase
     use FrontendKontextTrait;
 
     protected array $coreExtensionsToLoad = ['filemetadata'];
-    protected array $testExtensionsToLoad = ['conrat/crgalerie'];
+    protected array $testExtensionsToLoad = ['conratwebsolutions/crgalerie'];
     protected array $pathsToProvideInTestInstance = [
         'typo3conf/ext/crgalerie/Tests/Functional/Fixtures/Files/' => 'fileadmin/galerie/',
     ];

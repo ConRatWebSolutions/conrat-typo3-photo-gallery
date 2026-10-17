@@ -24,7 +24,7 @@ final class UploadAjaxControllerTest extends FunctionalTestCase
     use BackendBenutzerTrait;
     use TestbildTrait;
 
-    protected array $testExtensionsToLoad = ['conrat/crgalerie'];
+    protected array $testExtensionsToLoad = ['conratwebsolutions/crgalerie'];
 
     protected array $configurationToUseInTestInstance = [
         'GFX' => [

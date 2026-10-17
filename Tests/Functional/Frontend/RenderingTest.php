@@ -18,7 +18,7 @@ final class RenderingTest extends FunctionalTestCase
 {
     protected array $coreExtensionsToLoad = ['fluid_styled_content', 'filemetadata'];
     protected array $testExtensionsToLoad = [
-        'conrat/crgalerie',
+        'conratwebsolutions/crgalerie',
         'typo3conf/ext/crgalerie/Tests/Functional/Fixtures/Extensions/crgalerie_test',
     ];
     protected array $pathsToProvideInTestInstance = [

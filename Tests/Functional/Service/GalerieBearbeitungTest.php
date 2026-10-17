@@ -28,7 +28,7 @@ final class GalerieBearbeitungTest extends FunctionalTestCase
     use BackendBenutzerTrait;
     use TestbildTrait;
 
-    protected array $testExtensionsToLoad = ['conrat/crgalerie'];
+    protected array $testExtensionsToLoad = ['conratwebsolutions/crgalerie'];
 
     protected function setUp(): void
     {

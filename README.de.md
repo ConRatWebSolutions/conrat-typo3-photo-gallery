@@ -18,7 +18,7 @@ hochladen und sortieren, Bilder und Galerien ausblenden. Galerien hängen nicht 
 ## Einbinden
 
 ```bash
-composer require conrat/crgalerie
+composer require conratwebsolutions/crgalerie
 vendor/bin/typo3 extension:setup
 ```
 

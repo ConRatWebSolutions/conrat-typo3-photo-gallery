@@ -4,8 +4,9 @@
 
 Erste öffentliche Version.
 
-- Produktname „ConRat Photo Gallery“ (Titel, Site Set, composer.json); Extension-Key `crgalerie` und Paket
-  `conrat/crgalerie` bleiben.
+- Produktname „ConRat Photo Gallery“ (Titel, Site Set, composer.json); Extension-Key `crgalerie` bleibt.
+- **Geändert:** Das Composer-Paket heißt jetzt `conratwebsolutions/crgalerie` (Betas: `conrat/crgalerie`).
+  Site Set (`conrat/crgalerie`) und Extension-Key bleiben unverändert.
 - LICENSE (GPL-2.0), SECURITY.md, CONTRIBUTING.md; README mit Support- und Lizenzabschnitt.
 - Öffentliches Repository: `ConRatWebSolutions/conrat-typo3-photo-gallery`.
 - CI testet PHP 8.2, 8.3, 8.4 und 8.5.

@@ -13,7 +13,7 @@
         edit-on-github="ConRatWebSolutions/conrat-typo3-photo-gallery"
         edit-on-github-branch="main"
         typo3-core-preferred="14.3"
-        interlink-shortcode="conrat/crgalerie"
+        interlink-shortcode="conratwebsolutions/crgalerie"
     />
     <project
         title="ConRat Photo Gallery"

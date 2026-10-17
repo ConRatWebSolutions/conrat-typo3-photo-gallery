@@ -22,7 +22,7 @@ Install with Composer
 
 ..  code-block:: bash
 
-    composer require conrat/crgalerie
+    composer require conratwebsolutions/crgalerie
     vendor/bin/typo3 extension:setup
 
 ``extension:setup`` creates the database tables. In a non-Composer
