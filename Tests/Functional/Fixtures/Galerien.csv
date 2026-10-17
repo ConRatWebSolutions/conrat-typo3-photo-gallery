@@ -1,0 +1,52 @@
+"sys_file_storage"
+,"uid","pid","name","driver","configuration","is_default","is_browsable","is_public","is_writable","is_online"
+,1,0,"fileadmin","Local","<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""sDEF""><language index=""lDEF""><field index=""basePath""><value index=""vDEF"">fileadmin/</value></field><field index=""pathType""><value index=""vDEF"">relative</value></field><field index=""caseSensitive""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>",1,1,1,1,1
+"sys_file"
+,"uid","pid","storage","type","identifier","identifier_hash","folder_hash","name","extension","mime_type","size","missing"
+,1,0,1,2,"/galerie/quer1.jpg","h1","f1","quer1.jpg","jpg","image/jpeg",100,0
+,2,0,1,2,"/galerie/hoch1.jpg","h2","f1","hoch1.jpg","jpg","image/jpeg",100,0
+,3,0,1,2,"/galerie/quer2.jpg","h3","f1","quer2.jpg","jpg","image/jpeg",100,0
+,4,0,1,2,"/galerie/fehlt.jpg","h4","f1","fehlt.jpg","jpg","image/jpeg",100,1
+"sys_file_metadata"
+,"uid","pid","file","sys_language_uid","title","description","creator","copyright","width","height"
+,1,0,1,0,"","","","",60,40
+,2,0,2,0,"Burgtor","Das Tor im Abendlicht","Anna Beispiel","CC BY 4.0",40,60
+,3,0,3,0,"","","","",60,40
+,4,0,4,0,"","","","",60,40
+"tx_crgalerie_domain_model_kategorie"
+,"uid","pid","titel"
+,1,0,"Veranstaltungen"
+,2,0,"Landschaft"
+"tx_crgalerie_domain_model_galerie"
+,"uid","pid","titel","beschreibung","sortierung","kategorie","bilder","hidden","deleted"
+,1,0,"Sommerfest","Bilder vom Sommerfest",20,1,5,0,0
+,2,0,"Werratal","",10,2,2,0,0
+,3,0,"Versteckt","",5,1,1,1,0
+,4,0,"Leer","",30,1,0,0,0
+,5,0,"Nur fehlende Dateien","",40,1,2,0,0
+"tx_crgalerie_domain_model_bilder"
+,"uid","pid","titel","bildunterschrift","sortierung","datei","galerie","hidden","deleted"
+,1,0,"Zelt","Aufbau am Morgen (c) Max Muster",2,1,1,0,0
+,2,0,"Alpha","",1,1,1,0,0
+,3,0,"Beta","",1,1,1,0,0
+,4,0,"Versteckt","",0,1,1,1,0
+,5,0,"Geloescht","",0,1,1,0,1
+,6,0,"Ohne Datei","",9,1,1,0,0
+,7,0,"Fluss","",1,1,2,0,0
+,8,0,"Geheim","",1,1,3,0,0
+,9,0,"Kaputt","",0,1,2,0,0
+,10,0,"Fehlt","",1,1,5,0,0
+,11,0,"Ohne sys_file","",2,1,5,0,0
+"sys_file_reference"
+,"uid","pid","uid_local","uid_foreign","tablenames","fieldname","sorting_foreign","hidden","deleted"
+,1,0,1,1,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,2,0,2,2,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,3,0,3,3,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,4,0,1,4,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,5,0,1,5,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,6,0,4,6,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,7,0,3,7,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,8,0,1,8,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,9,0,99,9,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,10,0,4,10,"tx_crgalerie_domain_model_bilder","datei",1,0,0
+,11,0,99,11,"tx_crgalerie_domain_model_bilder","datei",1,0,0

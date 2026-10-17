@@ -1,0 +1,12 @@
+plugin.tx_crgalerie {
+    view {
+        templateRootPaths.0 = EXT:crgalerie/Resources/Private/Templates/
+        partialRootPaths.0 = EXT:crgalerie/Resources/Private/Partials/
+        layoutRootPaths.0 = EXT:crgalerie/Resources/Private/Layouts/
+    }
+}
+
+config.pageTitleProviders.crgalerie {
+    provider = Conrat\Crgalerie\PageTitle\GalerieTitleProvider
+    before = record,seo,recordTitle
+}

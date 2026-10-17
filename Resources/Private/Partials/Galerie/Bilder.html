@@ -1,0 +1,62 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:crg="http://typo3.org/ns/Conrat/Crgalerie/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:render partial="Galerie/Assets" arguments="{cssEinbinden: cssEinbinden}" />
+<f:variable name="anzahl" value="{bilder -> f:count()}" />
+<f:variable name="beschnitten" value="{f:if(condition: '{darstellung} != \'spalten\'', then: 1, else: 0)}" />
+<section class="crg crg--{darstellung}" data-crg-galerie aria-labelledby="crg-titel-{elementUid}"
+         data-crg-text-dialog="{f:translate(key: 'lightbox.dialog')}"
+         data-crg-text-close="{f:translate(key: 'lightbox.close')}"
+         data-crg-text-zoom="{f:translate(key: 'lightbox.zoom')}"
+         data-crg-text-previous="{f:translate(key: 'lightbox.previous')}"
+         data-crg-text-next="{f:translate(key: 'lightbox.next')}"
+         data-crg-text-error="{f:translate(key: 'lightbox.error')}">
+    <header class="crg__kopf">
+        <h{titelEbene} class="crg__titel" id="crg-titel-{elementUid}">{galerie.titel}</h{titelEbene}>
+        <f:if condition="{galerie.beschreibung}">
+            <p class="crg__beschreibung">{galerie.beschreibung}</p>
+        </f:if>
+        <p class="crg__meta"><f:if condition="{anzahl} == 1"><f:then><f:translate key="frontend.photos.one" /></f:then><f:else><f:translate key="frontend.photos.many" arguments="{0: anzahl}" /></f:else></f:if><f:if condition="{galerie.aufnahmezeitpunkt}"> · <f:format.date date="{galerie.aufnahmezeitpunkt}" pattern="MMMM yyyy" /></f:if><f:if condition="{galerie.fotograf}"> · <f:translate key="frontend.photographer" arguments="{0: galerie.fotograf}" /></f:if></p>
+    </header>
+    <ul class="crg__liste" data-crg-anzahl-start="{anzahlStart}">
+        <f:for each="{bilder}" as="bild" iteration="it">
+            <crg:bildQuellen datei="{bild.datei}" as="quellen">
+                <f:variable name="alt" value="{f:translate(key: 'frontend.alt', arguments: {0: it.cycle, 1: it.total, 2: galerie.titel})}" />
+                <f:if condition="{bild.beschreibung}"><f:variable name="alt" value="{bild.beschreibung}" /></f:if>
+                <f:if condition="{bild.titel}"><f:variable name="alt" value="{bild.titel}" /></f:if>
+                <f:variable name="bildSizes" value="{sizes}" />
+                <f:if condition="{darstellung} == 'zeilen'"><f:variable name="bildSizes" value="{crg:zeilenSizes(verhaeltnis: quellen.verhaeltnis)}" /></f:if>
+                <f:if condition="{darstellung} == 'titelbild' && {it.isFirst}"><f:variable name="bildSizes" value="{sizesTitel}" /></f:if>
+                <f:comment>Bilder nach „anzahlStart“ kommen schon versteckt vom Server, damit der Browser ihre
+                    Vorschaubilder nicht vorab lädt (Lazy-Loading-Abstand); ohne JavaScript macht galerie-noscript.css
+                    sie wieder sichtbar.</f:comment>
+                <f:variable name="versteckt" value="0" />
+                <f:if condition="{anzahlStart} > 0 && {anzahl} > {anzahlStart} && {it.cycle} > {anzahlStart}"><f:variable name="versteckt" value="1" /></f:if>
+                <li class="crg__bild"{f:if(condition: versteckt, then: ' hidden')} style="--crg-verhaeltnis: {quellen.verhaeltnis}">
+                    <figure class="crg__figur">
+                        <a class="crg__link" href="{quellen.grossUrl}" data-pswp-width="{quellen.grossBreite}" data-pswp-height="{quellen.grossHoehe}"{f:if(condition: beschnitten, then: ' data-cropped="true"')}>
+                            <img src="{quellen.src}" srcset="{quellen.srcset}" sizes="{bildSizes}" width="{quellen.breite}" height="{quellen.hoehe}" alt="{alt}" loading="lazy" decoding="async" />
+                        </a>
+                        <f:if condition="{showDescription} > 0 && ({bild.titel} || {bild.beschreibung} || {bild.credit})">
+                            <figcaption class="crg__bildtext">
+                                <f:if condition="({showDescription} == 2 || {showDescription} == 3) && {bild.titel}"><span class="crg__bildtitel">{bild.titel}</span></f:if>
+                                <f:if condition="({showDescription} == 1 || {showDescription} == 3) && {bild.beschreibung}"><span class="crg__unterschrift">{bild.beschreibung}</span></f:if>
+                                <f:if condition="{bild.credit}"><span class="crg__credit">{bild.credit}</span></f:if>
+                            </figcaption>
+                        </f:if>
+                        <div class="crg__lightboxtext" data-crg-lightboxtext hidden>
+                            <f:if condition="{bild.titel}"><strong class="crg__lightboxtitel">{bild.titel}</strong></f:if>
+                            <f:if condition="{bild.beschreibung}"><span class="crg__lightboxunterschrift">{bild.beschreibung}</span></f:if>
+                            <f:if condition="{bild.credit}"><small class="crg__lightboxcredit">{bild.credit}</small></f:if>
+                        </div>
+                    </figure>
+                </li>
+            </crg:bildQuellen>
+        </f:for>
+    </ul>
+    <f:if condition="{anzahlStart} > 0 && {anzahl} > {anzahlStart}">
+        <button type="button" class="crg__mehr" data-crg-mehr hidden><f:translate key="frontend.showAll" arguments="{0: anzahl}" /></button>
+        <noscript><link rel="stylesheet" href="{f:uri.resource(path: 'EXT:crgalerie/Resources/Public/Css/galerie-noscript.css')}" /></noscript>
+    </f:if>
+</section>
+</html>

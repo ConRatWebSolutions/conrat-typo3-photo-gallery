@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="locallang.xlf" product-name="crgalerie">
+		<header/>
+		<body>
+			<trans-unit id="frontend.photos.one">
+				<source>1 photo</source>
+			</trans-unit>
+			<trans-unit id="frontend.photos.many">
+				<source>%d photos</source>
+			</trans-unit>
+			<trans-unit id="frontend.photographer">
+				<source>Photos: %s</source>
+			</trans-unit>
+			<trans-unit id="frontend.showAll">
+				<source>Show all %d photos</source>
+			</trans-unit>
+			<trans-unit id="frontend.alt">
+				<source>Photo %1$d of %2$d – %3$s</source>
+			</trans-unit>
+			<trans-unit id="frontend.allGalleries">
+				<source>All galleries</source>
+			</trans-unit>
+			<trans-unit id="lightbox.dialog">
+				<source>Image viewer</source>
+			</trans-unit>
+			<trans-unit id="lightbox.close">
+				<source>Close (Esc)</source>
+			</trans-unit>
+			<trans-unit id="lightbox.zoom">
+				<source>Zoom</source>
+			</trans-unit>
+			<trans-unit id="lightbox.previous">
+				<source>Previous image</source>
+			</trans-unit>
+			<trans-unit id="lightbox.next">
+				<source>Next image</source>
+			</trans-unit>
+			<trans-unit id="lightbox.error">
+				<source>The image could not be loaded.</source>
+			</trans-unit>
+			<trans-unit id="module.overview.eyebrow">
+				<source>Gallery management</source>
+			</trans-unit>
+			<trans-unit id="module.overview.title">
+				<source>Image galleries</source>
+			</trans-unit>
+			<trans-unit id="module.overview.summary">
+				<source>%1$d galleries · %2$d visible on the website</source>
+			</trans-unit>
+			<trans-unit id="module.newGallery">
+				<source>New gallery</source>
+			</trans-unit>
+			<trans-unit id="module.search.placeholder">
+				<source>Search galleries …</source>
+			</trans-unit>
+			<trans-unit id="module.search.label">
+				<source>Search galleries</source>
+			</trans-unit>
+			<trans-unit id="module.filter.label">
+				<source>Filter</source>
+			</trans-unit>
+			<trans-unit id="module.filter.all">
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="module.filter.visible">
+				<source>Visible</source>
+			</trans-unit>
+			<trans-unit id="module.filter.hidden">
+				<source>Hidden</source>
+			</trans-unit>
+			<trans-unit id="module.sort">
+				<source>Sort</source>
+			</trans-unit>
+			<trans-unit id="module.sort.label">
+				<source>Sort order</source>
+			</trans-unit>
+			<trans-unit id="module.sort.web">
+				<source>As on the website</source>
+			</trans-unit>
+			<trans-unit id="module.sort.new">
+				<source>Newest first</source>
+			</trans-unit>
+			<trans-unit id="module.sort.old">
+				<source>Oldest first</source>
+			</trans-unit>
+			<trans-unit id="module.sort.az">
+				<source>Name A–Z</source>
+			</trans-unit>
+			<trans-unit id="module.sort.za">
+				<source>Name Z–A</source>
+			</trans-unit>
+			<trans-unit id="module.overview.dragHint">
+				<source>Drag galleries with the mouse to change their order on the website.</source>
+			</trans-unit>
+			<trans-unit id="module.showImages">
+				<source>Show images</source>
+			</trans-unit>
+			<trans-unit id="module.noImages">
+				<source>No images yet</source>
+			</trans-unit>
+			<trans-unit id="module.badge.hidden">
+				<source>Hidden</source>
+			</trans-unit>
+			<trans-unit id="module.badge.visible">
+				<source>Visible</source>
+			</trans-unit>
+			<trans-unit id="module.card.position">
+				<source>Position %d</source>
+			</trans-unit>
+			<trans-unit id="module.images.one">
+				<source>1 image</source>
+			</trans-unit>
+			<trans-unit id="module.images.count">
+				<source>%d images</source>
+			</trans-unit>
+			<trans-unit id="module.images.hiddenCount">
+				<source>%d hidden</source>
+			</trans-unit>
+			<trans-unit id="module.card.created">
+				<source>created %s</source>
+			</trans-unit>
+			<trans-unit id="module.upload.short">
+				<source>Upload</source>
+			</trans-unit>
+			<trans-unit id="module.uploadImages">
+				<source>Upload images</source>
+			</trans-unit>
+			<trans-unit id="module.editGallery">
+				<source>Edit title, description, category</source>
+			</trans-unit>
+			<trans-unit id="module.preview">
+				<source>Preview</source>
+			</trans-unit>
+			<trans-unit id="module.preview.disabled">
+				<source>Preview available once the gallery is visible</source>
+			</trans-unit>
+			<trans-unit id="module.preview.overview">
+				<source>View on the website</source>
+			</trans-unit>
+			<trans-unit id="module.preview.gallery">
+				<source>View gallery on the website</source>
+			</trans-unit>
+			<trans-unit id="module.overview.show">
+				<source>Show on the website</source>
+			</trans-unit>
+			<trans-unit id="module.overview.hide">
+				<source>Hide on the website</source>
+			</trans-unit>
+			<trans-unit id="module.overview.empty">
+				<source>No gallery found.</source>
+			</trans-unit>
+			<trans-unit id="module.order.unsaved">
+				<source>The order has changed but is not saved yet.</source>
+			</trans-unit>
+			<trans-unit id="module.order.discard">
+				<source>Discard</source>
+			</trans-unit>
+			<trans-unit id="module.order.save">
+				<source>Save order</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.eyebrow">
+				<source>Gallery</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.hiddenOnWebsite">
+				<source>hidden on the website</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.visibleOnWebsite">
+				<source>visible on the website</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.show">
+				<source>Show gallery</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.hide">
+				<source>Hide gallery</source>
+			</trans-unit>
+			<trans-unit id="module.edit">
+				<source>Edit</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.hint">
+				<source>Drag images with the mouse to change their order – they appear in the same order on the website. Click an image to edit its title and caption.</source>
+			</trans-unit>
+			<trans-unit id="module.image.editInfo">
+				<source>Edit image information</source>
+			</trans-unit>
+			<trans-unit id="module.image.createInfo">
+				<source>Add image information</source>
+			</trans-unit>
+			<trans-unit id="module.image.missing">
+				<source>File missing</source>
+			</trans-unit>
+			<trans-unit id="module.image.hidden">
+				<source>hidden</source>
+			</trans-unit>
+			<trans-unit id="module.image.show">
+				<source>Show image</source>
+			</trans-unit>
+			<trans-unit id="module.image.hide">
+				<source>Hide image</source>
+			</trans-unit>
+			<trans-unit id="module.image.delete">
+				<source>Delete image</source>
+			</trans-unit>
+			<trans-unit id="module.image.deleteConfirm">
+				<source>Delete this image permanently? The file will be removed from the server and cannot be restored.</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.empty">
+				<source>This gallery has no images yet.</source>
+			</trans-unit>
+			<trans-unit id="module.gallery.uploadNow">
+				<source>Upload images now</source>
+			</trans-unit>
+			<trans-unit id="module.back.allGalleries">
+				<source>All galleries</source>
+			</trans-unit>
+			<trans-unit id="module.back.gallery">
+				<source>Back to gallery</source>
+			</trans-unit>
+			<trans-unit id="module.upload.inGallery">
+				<source>images in the gallery</source>
+			</trans-unit>
+			<trans-unit id="module.upload.dropTitle">
+				<source>Drag images here</source>
+			</trans-unit>
+			<trans-unit id="module.upload.dropOr">
+				<source>or</source>
+			</trans-unit>
+			<trans-unit id="module.upload.dropLink">
+				<source>choose from your computer</source>
+			</trans-unit>
+			<trans-unit id="module.upload.dropHint">
+				<source>JPG, PNG, WebP or HEIC · up to %d MB · uploading starts immediately</source>
+			</trans-unit>
+			<trans-unit id="module.upload.note">
+				<source>Images are uploaded in the order shown here and added to the end of the gallery. You can change the order afterwards in the gallery by drag and drop.</source>
+			</trans-unit>
+			<trans-unit id="module.upload.toGallery">
+				<source>Go to gallery</source>
+			</trans-unit>
+			<trans-unit id="upload.waiting">
+				<source>waiting</source>
+			</trans-unit>
+			<trans-unit id="upload.summary">
+				<source>%1$d of %2$d uploaded</source>
+			</trans-unit>
+			<trans-unit id="upload.failedCount">
+				<source>%d failed</source>
+			</trans-unit>
+			<trans-unit id="upload.uploading">
+				<source>uploading …</source>
+			</trans-unit>
+			<trans-unit id="upload.processing">
+				<source>processing …</source>
+			</trans-unit>
+			<trans-unit id="upload.done">
+				<source>done</source>
+			</trans-unit>
+			<trans-unit id="upload.error">
+				<source>Error</source>
+			</trans-unit>
+			<trans-unit id="upload.notPossible">
+				<source>not possible</source>
+			</trans-unit>
+			<trans-unit id="upload.allowedTypes">
+				<source>Allowed are JPG, PNG, WebP and HEIC.</source>
+			</trans-unit>
+			<trans-unit id="upload.tooLarge">
+				<source>too large</source>
+			</trans-unit>
+			<trans-unit id="upload.tooLargeDetail">
+				<source>%1$s – the maximum is %2$d MB.</source>
+			</trans-unit>
+			<trans-unit id="upload.failedStatus">
+				<source>Upload failed (status %d).</source>
+			</trans-unit>
+			<trans-unit id="upload.noConnection">
+				<source>No connection to the server.</source>
+			</trans-unit>
+			<trans-unit id="message.title.error">
+				<source>Error</source>
+			</trans-unit>
+			<trans-unit id="message.title.saved">
+				<source>Saved</source>
+			</trans-unit>
+			<trans-unit id="message.title.notSaved">
+				<source>Not saved</source>
+			</trans-unit>
+			<trans-unit id="message.title.deleted">
+				<source>Deleted</source>
+			</trans-unit>
+			<trans-unit id="message.title.notDeleted">
+				<source>Not deleted</source>
+			</trans-unit>
+			<trans-unit id="message.noStoragePid">
+				<source>No storage PID configured (Settings &gt; Extension Configuration &gt; crgalerie).</source>
+			</trans-unit>
+			<trans-unit id="message.galleriesSorted">
+				<source>The new order of the galleries has been saved and also applies to the website.</source>
+			</trans-unit>
+			<trans-unit id="message.imagesSorted">
+				<source>The new order has been saved and also applies to the website.</source>
+			</trans-unit>
+			<trans-unit id="message.galleryHidden">
+				<source>The gallery is hidden on the website.</source>
+			</trans-unit>
+			<trans-unit id="message.galleryVisible">
+				<source>The gallery is visible on the website.</source>
+			</trans-unit>
+			<trans-unit id="message.imageVisible">
+				<source>The image is visible again.</source>
+			</trans-unit>
+			<trans-unit id="message.imageHidden">
+				<source>The image is hidden.</source>
+			</trans-unit>
+			<trans-unit id="message.deleted.withFile">
+				<source>The image and its file have been deleted.</source>
+			</trans-unit>
+			<trans-unit id="message.deleted.noFile">
+				<source>The image has been deleted.</source>
+			</trans-unit>
+			<trans-unit id="message.deleted.fileInUse">
+				<source>Image removed. The file is still used elsewhere and is kept.</source>
+			</trans-unit>
+			<trans-unit id="message.deleted.fileNotDeleted">
+				<source>Image removed. The file could not be deleted from the server (missing permissions?).</source>
+			</trans-unit>
+			<trans-unit id="error.galleryNotFound">
+				<source>The gallery was not found.</source>
+			</trans-unit>
+			<trans-unit id="error.noPermission">
+				<source>No permission for this gallery.</source>
+			</trans-unit>
+			<trans-unit id="error.noWriteAccess">
+				<source>No write access to the gallery folder – please check the file mount.</source>
+			</trans-unit>
+			<trans-unit id="error.format">
+				<source>This file format is not supported. Allowed are JPG, PNG, WebP and HEIC.</source>
+			</trans-unit>
+			<trans-unit id="error.heic">
+				<source>This server cannot convert HEIC images. Please export them as JPG.</source>
+			</trans-unit>
+			<trans-unit id="error.pixel">
+				<source>The image is too large (more than 100 megapixels). Please export a smaller version.</source>
+			</trans-unit>
+			<trans-unit id="error.processorDisabled">
+				<source>Image processing is disabled in TYPO3.</source>
+			</trans-unit>
+			<trans-unit id="error.processing">
+				<source>The image could not be processed.</source>
+			</trans-unit>
+			<trans-unit id="error.saveImage">
+				<source>The image could not be saved in the gallery.</source>
+			</trans-unit>
+			<trans-unit id="error.uploadFolder">
+				<source>The upload folder is not available – please check the extension configuration (uploadFolder).</source>
+			</trans-unit>
+			<trans-unit id="error.generic">
+				<source>An error occurred during the upload.</source>
+			</trans-unit>
+			<trans-unit id="error.tooLarge">
+				<source>The file did not arrive completely or is too large (max. %d MB).</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

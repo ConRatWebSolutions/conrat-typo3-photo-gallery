@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="locallang_db.xlf" product-name="crgalerie">
+		<header/>
+		<body>
+			<trans-unit id="tx_crgalerie_domain_model_kategorie" approved="yes">
+				<source>Gallery category</source>
+				<target>Galerie-Kategorie</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_kategorie.titel" approved="yes">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie" approved="yes">
+				<source>Gallery</source>
+				<target>Galerie</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie.titel" approved="yes">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie.beschreibung" approved="yes">
+				<source>Description</source>
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie.fotograf" approved="yes">
+				<source>Photographer</source>
+				<target>Fotograf</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie.aufnahmezeitpunkt" approved="yes">
+				<source>Date taken</source>
+				<target>Aufnahmezeitpunkt</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie.sortierung" approved="yes">
+				<source>Sorting</source>
+				<target>Sortierung</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie.kategorie" approved="yes">
+				<source>Category</source>
+				<target>Kategorie</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_galerie.bilder" approved="yes">
+				<source>Images</source>
+				<target>Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_bilder" approved="yes">
+				<source>Gallery image</source>
+				<target>Galeriebild</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_bilder.titel" approved="yes">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_bilder.bildunterschrift" approved="yes">
+				<source>Caption</source>
+				<target>Bildunterschrift</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_bilder.sortierung" approved="yes">
+				<source>Sorting</source>
+				<target>Sortierung</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_bilder.datei" approved="yes">
+				<source>File</source>
+				<target>Datei</target>
+			</trans-unit>
+			<trans-unit id="tx_crgalerie_domain_model_bilder.galerie" approved="yes">
+				<source>Gallery</source>
+				<target>Galerie</target>
+			</trans-unit>
+			<trans-unit id="plugin.galerie.title" approved="yes">
+				<source>Gallery</source>
+				<target>Galerie</target>
+			</trans-unit>
+			<trans-unit id="plugin.galerie.description" approved="yes">
+				<source>Shows the images of one gallery from the gallery module.</source>
+				<target>Zeigt die Bilder einer Galerie aus dem Galerie-Modul.</target>
+			</trans-unit>
+			<trans-unit id="plugin.uebersicht.title" approved="yes">
+				<source>Gallery overview</source>
+				<target>Galerie-Übersicht</target>
+			</trans-unit>
+			<trans-unit id="plugin.uebersicht.description" approved="yes">
+				<source>Tiles of all galleries (or of one category); a click opens the gallery.</source>
+				<target>Kacheln aller Galerien (oder einer Kategorie); ein Klick öffnet die Galerie.</target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet.gallery" approved="yes">
+				<source>Gallery</source>
+				<target>Galerie</target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet.selection" approved="yes">
+				<source>Selection</source>
+				<target>Auswahl</target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet.display" approved="yes">
+				<source>Display</source>
+				<target>Anzeige</target>
+			</trans-unit>
+			<trans-unit id="flexform.galerie" approved="yes">
+				<source>Gallery</source>
+				<target>Galerie</target>
+			</trans-unit>
+			<trans-unit id="flexform.category" approved="yes">
+				<source>Only galleries of this category</source>
+				<target>Nur Galerien dieser Kategorie</target>
+			</trans-unit>
+			<trans-unit id="flexform.category.all" approved="yes">
+				<source>All categories</source>
+				<target>Alle Kategorien</target>
+			</trans-unit>
+			<trans-unit id="flexform.showDescription" approved="yes">
+				<source>Text below the images</source>
+				<target>Text unter den Bildern</target>
+			</trans-unit>
+			<trans-unit id="flexform.showDescription.caption" approved="yes">
+				<source>Caption</source>
+				<target>Bildunterschrift</target>
+			</trans-unit>
+			<trans-unit id="flexform.showDescription.none" approved="yes">
+				<source>None</source>
+				<target>Keiner</target>
+			</trans-unit>
+			<trans-unit id="flexform.showDescription.title" approved="yes">
+				<source>Image title</source>
+				<target>Bildtitel</target>
+			</trans-unit>
+			<trans-unit id="flexform.showDescription.both" approved="yes">
+				<source>Image title and caption</source>
+				<target>Bildtitel und Bildunterschrift</target>
+			</trans-unit>
+			<trans-unit id="flexform.order" approved="yes">
+				<source>Order of the images</source>
+				<target>Reihenfolge der Bilder</target>
+			</trans-unit>
+			<trans-unit id="flexform.order.moduleAsc" approved="yes">
+				<source>As in the gallery module (ascending)</source>
+				<target>Wie im Galerie-Modul (aufsteigend)</target>
+			</trans-unit>
+			<trans-unit id="flexform.order.moduleDesc" approved="yes">
+				<source>As in the gallery module (reversed)</source>
+				<target>Wie im Galerie-Modul (umgekehrt)</target>
+			</trans-unit>
+			<trans-unit id="flexform.order.titleAsc" approved="yes">
+				<source>By title (A–Z)</source>
+				<target>Nach Titel (A–Z)</target>
+			</trans-unit>
+			<trans-unit id="flexform.order.titleDesc" approved="yes">
+				<source>By title (Z–A)</source>
+				<target>Nach Titel (Z–A)</target>
+			</trans-unit>
+			<trans-unit id="flexform.darstellung" approved="yes">
+				<source>Layout</source>
+				<target>Darstellung</target>
+			</trans-unit>
+			<trans-unit id="flexform.darstellung.zeilen" approved="yes">
+				<source>Mosaic in rows (complete images)</source>
+				<target>Mosaik in Zeilen (Bilder vollständig)</target>
+			</trans-unit>
+			<trans-unit id="flexform.darstellung.raster" approved="yes">
+				<source>Grid (equal tiles)</source>
+				<target>Raster (gleich große Kacheln)</target>
+			</trans-unit>
+			<trans-unit id="flexform.darstellung.spalten" approved="yes">
+				<source>Mosaic in columns</source>
+				<target>Mosaik in Spalten</target>
+			</trans-unit>
+			<trans-unit id="flexform.darstellung.titelbild" approved="yes">
+				<source>Large cover image and grid</source>
+				<target>Großes Titelbild und Raster</target>
+			</trans-unit>
+			<trans-unit id="flexform.anzahlStart" approved="yes">
+				<source>Images shown at first (0 = all)</source>
+				<target>Bilder zunächst zeigen (0 = alle)</target>
+			</trans-unit>
+			<trans-unit id="flexform.anzahlStart.description" approved="yes">
+				<source>More images appear after clicking “Show all X photos”.</source>
+				<target>Weitere Bilder erscheinen nach Klick auf „Alle X Fotos anzeigen“.</target>
+			</trans-unit>
+			<trans-unit id="flexform.kachelstil" approved="yes">
+				<source>Overview tiles</source>
+				<target>Kacheln der Übersicht</target>
+			</trans-unit>
+			<trans-unit id="flexform.kachelstil.unten" approved="yes">
+				<source>Title below the image</source>
+				<target>Titel unter dem Bild</target>
+			</trans-unit>
+			<trans-unit id="flexform.kachelstil.ueber" approved="yes">
+				<source>Title on the image</source>
+				<target>Titel über dem Bild</target>
+			</trans-unit>
+			<trans-unit id="extconf.storagePid" approved="yes">
+				<source>Storage PID: page/folder in which the module stores new galleries and images</source>
+				<target>Storage-PID: Seite/Sysordner, in dem das Modul neue Galerien und Bilder speichert</target>
+			</trans-unit>
+			<trans-unit id="extconf.previewPid" approved="yes">
+				<source>Preview page: page with a “Gallery overview” element for the preview links in the module (0 = no preview)</source>
+				<target>Vorschau-Seite: Seite mit einem Element „Galerie-Übersicht“ für die Vorschau-Links im Modul (0 = keine Vorschau)</target>
+			</trans-unit>
+			<trans-unit id="extconf.uploadFolder" approved="yes">
+				<source>Upload folder: FAL folder for gallery images, one subfolder per gallery is created below it (e.g. 1:/galerien/)</source>
+				<target>Upload-Ordner: FAL-Ordner für Galeriebilder, darunter entsteht je Galerie ein Unterordner (z. B. 1:/galerien/)</target>
+			</trans-unit>
+			<trans-unit id="extconf.maxBildgroesse" approved="yes">
+				<source>Maximum image size: longest side in pixels to which uploaded images are reduced (800–6000)</source>
+				<target>Maximale Bildgröße: längste Seite in Pixeln, auf die hochgeladene Bilder verkleinert werden (800–6000)</target>
+			</trans-unit>
+			<trans-unit id="set.label" approved="yes">
+				<source>ConRat Photo Gallery</source>
+				<target>ConRat Photo Gallery</target>
+			</trans-unit>
+			<trans-unit id="settings.category" approved="yes">
+				<source>Gallery (crgalerie)</source>
+				<target>Galerie (crgalerie)</target>
+			</trans-unit>
+			<trans-unit id="settings.pageTitle" approved="yes">
+				<source>Page title when showing a gallery</source>
+				<target>Seitentitel bei Galerie-Anzeige</target>
+			</trans-unit>
+			<trans-unit id="settings.pageTitle.description" approved="yes">
+				<source>The placeholder {galerie} is replaced by the gallery title. Empty = page title stays unchanged.</source>
+				<target>Platzhalter {galerie} wird durch den Galerietitel ersetzt. Leer = Seitentitel bleibt unverändert.</target>
+			</trans-unit>
+			<trans-unit id="settings.creditField" approved="yes">
+				<source>Metadata field for the author</source>
+				<target>Metadatenfeld für den Urheber</target>
+			</trans-unit>
+			<trans-unit id="settings.creditField.description" approved="yes">
+				<source>Column in sys_file_metadata, e.g. creator (EXT:filemetadata). Empty = only “(c) …” in the text.</source>
+				<target>Spalte in sys_file_metadata, z. B. creator (EXT:filemetadata). Leer = nur „(c) …“ im Text.</target>
+			</trans-unit>
+			<trans-unit id="settings.licenseField" approved="yes">
+				<source>Metadata field for the license</source>
+				<target>Metadatenfeld für die Lizenz</target>
+			</trans-unit>
+			<trans-unit id="settings.licenseField.description" approved="yes">
+				<source>Column in sys_file_metadata, e.g. copyright. Empty = no license.</source>
+				<target>Spalte in sys_file_metadata, z. B. copyright. Leer = keine Lizenz.</target>
+			</trans-unit>
+			<trans-unit id="settings.css" approved="yes">
+				<source>Include gallery CSS</source>
+				<target>Galerie-CSS einbinden</target>
+			</trans-unit>
+			<trans-unit id="settings.css.description" approved="yes">
+				<source>Disable if the project provides its own CSS for the gallery. The basic lightbox CSS stays active.</source>
+				<target>Aus, wenn das Projekt eigenes CSS für die Galerie liefert. Das Grund-CSS der Lightbox bleibt aktiv.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

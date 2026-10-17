@@ -1,0 +1,148 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Module" />
+
+<f:section name="Content">
+    <div class="crg" data-crg-gallery>
+        <header class="crg-head">
+            <div>
+                <p class="crg-eyebrow"><f:translate key="module.gallery.eyebrow" /></p>
+                <h1 class="crg-title">{galerie.titel}</h1>
+                <p class="crg-sub">
+                    <f:variable name="anzahlBilder" value="{bilder -> f:count()}" />
+                    <f:if condition="{anzahlBilder} == 1"><f:then><f:translate key="module.images.one" /></f:then><f:else><f:translate key="module.images.count" arguments="{0: anzahlBilder}" /></f:else></f:if>
+                    <f:if condition="{galerie.status} == 'fhidden'">
+                        <f:then><span class="crg-badge crg-badge--muted"><f:translate key="module.gallery.hiddenOnWebsite" /></span></f:then>
+                        <f:else><span class="crg-badge crg-badge--on"><f:translate key="module.gallery.visibleOnWebsite" /></span></f:else>
+                    </f:if>
+                </p>
+            </div>
+            <div class="btn-toolbar" style="gap: 8px;">
+                <f:if condition="{galerie.status} == 'fhidden'">
+                    <f:then>
+                        <f:render section="Aktion" arguments="{action: 'toggleGalleryHidden', werte: {gal: galerie.uid, hidden: 0, back: 'galerie'}, klasse: 'btn btn-default', icon: 'actions-edit-unhide', text: '{f:translate(key: \'module.gallery.show\')}'}" />
+                    </f:then>
+                    <f:else>
+                        <f:render section="Aktion" arguments="{action: 'toggleGalleryHidden', werte: {gal: galerie.uid, hidden: 1, back: 'galerie'}, klasse: 'btn btn-default', icon: 'actions-edit-hide', text: '{f:translate(key: \'module.gallery.hide\')}'}" />
+                    </f:else>
+                </f:if>
+                <f:if condition="{vorschauUri}">
+                    <f:if condition="{galerie.status} == 'fhidden'">
+                        <f:then>
+                            <span class="btn btn-default disabled" aria-disabled="true" title="{f:translate(key: 'module.preview.disabled')}">
+                                <core:icon identifier="actions-view-page" size="small" /> <f:translate key="module.preview" />
+                            </span>
+                        </f:then>
+                        <f:else>
+                            <a class="btn btn-default" href="{vorschauUri}" target="_blank" rel="noopener" title="{f:translate(key: 'module.preview.gallery')}">
+                                <core:icon identifier="actions-view-page" size="small" /> <f:translate key="module.preview" />
+                            </a>
+                        </f:else>
+                    </f:if>
+                </f:if>
+                <a class="btn btn-default" href="{be:uri.editRecord(uid: galerie.uid, table: 'tx_crgalerie_domain_model_galerie', returnUrl: returnUrl)}">
+                    <core:icon identifier="actions-open" size="small" /> <f:translate key="module.edit" />
+                </a>
+                <f:link.action action="upload" arguments="{gal: galerie.uid}" class="btn btn-primary">
+                    <core:icon identifier="actions-upload" size="small" /> <f:translate key="module.uploadImages" />
+                </f:link.action>
+            </div>
+        </header>
+
+        <f:if condition="{bilder}">
+            <f:then>
+                <p class="crg-hint">
+                    <core:icon identifier="actions-move" size="small" />
+                    <f:translate key="module.gallery.hint" />
+                </p>
+
+                <div class="crg-images" data-crg-sortable>
+                    <f:for each="{bilder}" as="bild" iteration="it">
+                        <div class="crg-image{f:if(condition: '{bild.status} == \'fhidden\'', then: ' is-hidden')}" data-uid="{bild.uid}">
+                            <f:if condition="{bild.metadaten}">
+                                <f:then>
+                                    <a class="crg-image__media" draggable="false" title="{f:translate(key: 'module.image.editInfo')}"
+                                       href="{be:uri.editRecord(uid: bild.metadaten, table: 'sys_file_metadata', returnUrl: returnUrl)}">
+                                        <f:render section="Vorschau" arguments="{bild: bild, it: it}" />
+                                    </a>
+                                </f:then>
+                                <f:else>
+                                    <f:if condition="{bild.datei}">
+                                        <f:then>
+                                            <a class="crg-image__media" draggable="false" title="{f:translate(key: 'module.image.createInfo')}"
+                                               href="{be:uri.newRecord(table: 'sys_file_metadata', pid: 0, defaultValues: {sys_file_metadata: {file: bild.datei}}, returnUrl: returnUrl)}">
+                                                <f:render section="Vorschau" arguments="{bild: bild, it: it}" />
+                                            </a>
+                                        </f:then>
+                                        <f:else>
+                                            <span class="crg-image__media is-missing" title="{f:translate(key: 'module.image.missing')}">
+                                                <f:render section="Vorschau" arguments="{bild: bild, it: it}" />
+                                            </span>
+                                        </f:else>
+                                    </f:if>
+                                </f:else>
+                            </f:if>
+                            <f:if condition="{bild.status} == 'fhidden'">
+                                <span class="crg-image__flag"><span class="crg-badge"><f:translate key="module.image.hidden" /></span></span>
+                            </f:if>
+                            <div class="crg-image__foot">
+                                <span class="crg-image__name" title="{bild.titel}">{bild.titel}</span>
+                                <f:if condition="{bild.status} == 'fhidden'">
+                                    <f:then>
+                                        <f:render section="Aktion" arguments="{action: 'toggleImageHidden', werte: {img: bild.uid, gal: galerie.uid, do: 'show'}, klasse: 'btn btn-default btn-sm', icon: 'actions-edit-unhide', titel: '{f:translate(key: \'module.image.show\')}'}" />
+                                    </f:then>
+                                    <f:else>
+                                        <f:render section="Aktion" arguments="{action: 'toggleImageHidden', werte: {img: bild.uid, gal: galerie.uid, do: 'hide'}, klasse: 'btn btn-default btn-sm', icon: 'actions-edit-hide', titel: '{f:translate(key: \'module.image.hide\')}'}" />
+                                    </f:else>
+                                </f:if>
+                                <f:render section="Aktion" arguments="{action: 'deleteImage', werte: {image: bild.uid, gal: galerie.uid}, klasse: 'btn btn-default btn-sm', icon: 'actions-edit-delete', titel: '{f:translate(key: \'module.image.delete\')}', bestaetigung: '{f:translate(key: \'module.image.deleteConfirm\')}'}" />
+                            </div>
+                        </div>
+                    </f:for>
+                </div>
+
+                <div class="crg-savebar" data-crg-savebar hidden>
+                    <core:icon identifier="actions-exclamation-triangle-alt" size="small" />
+                    <span class="crg-savebar__text"><f:translate key="module.order.unsaved" /></span>
+                    <button type="button" class="btn btn-default" data-crg-reset><f:translate key="module.order.discard" /></button>
+                    <f:form action="sortImages" class="d-inline" id="crg-sortform">
+                        <f:form.hidden name="gal" value="{galerie.uid}" />
+                        <f:form.hidden name="sorting" value="" id="crg-sorting" />
+                        <button type="submit" class="btn btn-primary">
+                            <core:icon identifier="actions-save" size="small" /> <f:translate key="module.order.save" />
+                        </button>
+                    </f:form>
+                </div>
+            </f:then>
+            <f:else>
+                <div class="crg-empty-state">
+                    <p><f:translate key="module.gallery.empty" /></p>
+                    <f:link.action action="upload" arguments="{gal: galerie.uid}" class="btn btn-primary">
+                        <core:icon identifier="actions-upload" size="small" /> <f:translate key="module.gallery.uploadNow" />
+                    </f:link.action>
+                </div>
+            </f:else>
+        </f:if>
+    </div>
+</f:section>
+
+<f:section name="Aktion">
+    <f:comment>Änderungen nur per POST (Formular statt Link)</f:comment>
+    <f:form action="{action}" class="crg-aktion">
+        <f:for each="{werte}" as="wert" key="name"><f:form.hidden name="{name}" value="{wert}" /></f:for>
+        <button type="submit" class="{klasse}" title="{titel}" data-crg-confirm="{bestaetigung}">
+            <core:icon identifier="{icon}" size="small" /><f:if condition="{text}"> {text}</f:if>
+        </button>
+    </f:form>
+</f:section>
+
+<f:section name="Vorschau">
+    <f:if condition="{bild.datei}">
+        <f:then><f:image src="{bild.datei}" width="300c" height="300c" alt="" loading="lazy" additionalAttributes="{draggable: 'false'}" /></f:then>
+        <f:else><span class="crg-image__missing"><f:translate key="module.image.missing" /></span></f:else>
+    </f:if>
+    <span class="crg-image__pos" data-crg-pos>{it.cycle}</span>
+</f:section>
+</html>

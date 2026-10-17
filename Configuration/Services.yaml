@@ -1,0 +1,53 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Conrat\Crgalerie\:
+    resource: '../Classes/*'
+    exclude:
+      - '../Classes/Domain/Model/*'
+
+  Conrat\Crgalerie\Configuration\ExtensionKonfiguration:
+    public: true
+
+  Conrat\Crgalerie\Domain\Repository\GalerieRepository:
+    public: true
+
+  Conrat\Crgalerie\Domain\Repository\BilderRepository:
+    public: true
+
+  Conrat\Crgalerie\Service\BildAnzeigeService:
+    public: true
+
+  Conrat\Crgalerie\Controller\Backend\AdminController:
+    public: true
+
+  # Page Title Provider
+  Conrat\Crgalerie\PageTitle\GalerieTitleProvider:
+    public: true
+
+  Conrat\Crgalerie\Upgrades\PluginZuCTypeUpgrade:
+    public: true
+
+  Conrat\Crgalerie\Service\BildVerarbeitung:
+    public: true
+
+  Conrat\Crgalerie\Service\GalerieDateiablage:
+    public: true
+
+  Conrat\Crgalerie\Service\ModulAbfragen:
+    public: true
+
+  Conrat\Crgalerie\Service\GalerieBearbeitung:
+    public: true
+
+  Conrat\Crgalerie\Controller\Backend\UploadAjaxController:
+    public: true
+
+  Conrat\Crgalerie\Service\BildQuellenService:
+    public: true
+
+  Conrat\Crgalerie\Command\FassungenVorwaermenCommand:
+    public: true

@@ -1,0 +1,12 @@
+.DS_Store
+*.log
+/vendor/
+/.ddev/
+/var/
+/public/
+/composer.lock
+
+/.Build/
+/composer.lock
+/.phpunit.cache/
+/Documentation-GENERATED-temp/

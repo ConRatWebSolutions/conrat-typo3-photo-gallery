@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides
+    xmlns="https://www.phpdoc.org/guides"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+    links-are-relative="true"
+>
+    <extension
+        class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+        project-home="https://somesolutions.de/typo3-bildergalerie/"
+        project-repository="https://github.com/ConRatWebSolutions/conrat-typo3-photo-gallery"
+        project-issues="https://github.com/ConRatWebSolutions/conrat-typo3-photo-gallery/issues"
+        edit-on-github="ConRatWebSolutions/conrat-typo3-photo-gallery"
+        edit-on-github-branch="main"
+        typo3-core-preferred="14.3"
+        interlink-shortcode="conrat/crgalerie"
+    />
+    <project
+        title="ConRat Photo Gallery"
+        release="3.0.0"
+        version="3.0"
+        copyright="since 2019 by ConRat WebSolutions GmbH"
+    />
+</guides>

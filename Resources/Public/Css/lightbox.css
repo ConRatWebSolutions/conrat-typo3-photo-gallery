@@ -1,0 +1,27 @@
+/*
+ * crgalerie – Lightbox (PhotoSwipe): Bildtext, Farben, Ebene. Wird immer geladen, auch bei crgalerie.frontend.css = false.
+ *
+ *   --crg-lightbox-hintergrund  Hintergrund (#000)
+ *   --crg-lightbox-z            z-index der Lightbox (2147483000). Liegt über typischen Cookie-Bannern und
+ *                               Overlays (oft 99999 bis 2147483647 − x); PhotoSwipe selbst nimmt nur 100000.
+ */
+.pswp {
+    --pswp-bg: var(--crg-lightbox-hintergrund, #000);
+    --pswp-placeholder-bg: #222;
+    --pswp-root-z-index: var(--crg-lightbox-z, 2147483000);
+}
+.crg-pswp-bildtext {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 48px 16px 16px;
+    color: #fff;
+    font-size: .95rem;
+    line-height: 1.4;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .8));
+    pointer-events: none;
+}
+.crg-pswp-bildtext:empty { display: none; }
+.crg-pswp-bildtext small { opacity: .75; }

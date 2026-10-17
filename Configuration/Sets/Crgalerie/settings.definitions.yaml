@@ -1,0 +1,29 @@
+categories:
+  crgalerie:
+    label: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.category'
+
+settings:
+  crgalerie.pageTitle:
+    label: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.pageTitle'
+    description: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.pageTitle.description'
+    category: crgalerie
+    type: string
+    default: ''
+  crgalerie.metadata.creditField:
+    label: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.creditField'
+    description: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.creditField.description'
+    category: crgalerie
+    type: string
+    default: ''
+  crgalerie.metadata.licenseField:
+    label: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.licenseField'
+    description: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.licenseField.description'
+    category: crgalerie
+    type: string
+    default: ''
+  crgalerie.frontend.css:
+    label: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.css'
+    description: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.css.description'
+    category: crgalerie
+    type: bool
+    default: true

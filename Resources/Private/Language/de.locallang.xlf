@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="locallang.xlf" product-name="crgalerie">
+		<header/>
+		<body>
+			<trans-unit id="frontend.photos.one" approved="yes">
+				<source>1 photo</source>
+				<target>1 Foto</target>
+			</trans-unit>
+			<trans-unit id="frontend.photos.many" approved="yes">
+				<source>%d photos</source>
+				<target>%d Fotos</target>
+			</trans-unit>
+			<trans-unit id="frontend.photographer" approved="yes">
+				<source>Photos: %s</source>
+				<target>Fotos: %s</target>
+			</trans-unit>
+			<trans-unit id="frontend.showAll" approved="yes">
+				<source>Show all %d photos</source>
+				<target>Alle %d Fotos anzeigen</target>
+			</trans-unit>
+			<trans-unit id="frontend.alt" approved="yes">
+				<source>Photo %1$d of %2$d – %3$s</source>
+				<target>Foto %1$d von %2$d – %3$s</target>
+			</trans-unit>
+			<trans-unit id="frontend.allGalleries" approved="yes">
+				<source>All galleries</source>
+				<target>Alle Galerien</target>
+			</trans-unit>
+			<trans-unit id="lightbox.dialog" approved="yes">
+				<source>Image viewer</source>
+				<target>Großansicht</target>
+			</trans-unit>
+			<trans-unit id="lightbox.close" approved="yes">
+				<source>Close (Esc)</source>
+				<target>Schließen (Esc)</target>
+			</trans-unit>
+			<trans-unit id="lightbox.zoom" approved="yes">
+				<source>Zoom</source>
+				<target>Zoomen</target>
+			</trans-unit>
+			<trans-unit id="lightbox.previous" approved="yes">
+				<source>Previous image</source>
+				<target>Vorheriges Bild</target>
+			</trans-unit>
+			<trans-unit id="lightbox.next" approved="yes">
+				<source>Next image</source>
+				<target>Nächstes Bild</target>
+			</trans-unit>
+			<trans-unit id="lightbox.error" approved="yes">
+				<source>The image could not be loaded.</source>
+				<target>Das Bild konnte nicht geladen werden.</target>
+			</trans-unit>
+			<trans-unit id="module.overview.eyebrow" approved="yes">
+				<source>Gallery management</source>
+				<target>Galerie-Verwaltung</target>
+			</trans-unit>
+			<trans-unit id="module.overview.title" approved="yes">
+				<source>Image galleries</source>
+				<target>Bildergalerien</target>
+			</trans-unit>
+			<trans-unit id="module.overview.summary" approved="yes">
+				<source>%1$d galleries · %2$d visible on the website</source>
+				<target>%1$d Galerien · %2$d sichtbar auf der Website</target>
+			</trans-unit>
+			<trans-unit id="module.newGallery" approved="yes">
+				<source>New gallery</source>
+				<target>Neue Galerie</target>
+			</trans-unit>
+			<trans-unit id="module.search.placeholder" approved="yes">
+				<source>Search galleries …</source>
+				<target>Galerie suchen …</target>
+			</trans-unit>
+			<trans-unit id="module.search.label" approved="yes">
+				<source>Search galleries</source>
+				<target>Galerie suchen</target>
+			</trans-unit>
+			<trans-unit id="module.filter.label" approved="yes">
+				<source>Filter</source>
+				<target>Filter</target>
+			</trans-unit>
+			<trans-unit id="module.filter.all" approved="yes">
+				<source>All</source>
+				<target>Alle</target>
+			</trans-unit>
+			<trans-unit id="module.filter.visible" approved="yes">
+				<source>Visible</source>
+				<target>Sichtbar</target>
+			</trans-unit>
+			<trans-unit id="module.filter.hidden" approved="yes">
+				<source>Hidden</source>
+				<target>Ausgeblendet</target>
+			</trans-unit>
+			<trans-unit id="module.sort" approved="yes">
+				<source>Sort</source>
+				<target>Sortieren</target>
+			</trans-unit>
+			<trans-unit id="module.sort.label" approved="yes">
+				<source>Sort order</source>
+				<target>Sortierung</target>
+			</trans-unit>
+			<trans-unit id="module.sort.web" approved="yes">
+				<source>As on the website</source>
+				<target>Wie auf der Website</target>
+			</trans-unit>
+			<trans-unit id="module.sort.new" approved="yes">
+				<source>Newest first</source>
+				<target>Neueste zuerst</target>
+			</trans-unit>
+			<trans-unit id="module.sort.old" approved="yes">
+				<source>Oldest first</source>
+				<target>Älteste zuerst</target>
+			</trans-unit>
+			<trans-unit id="module.sort.az" approved="yes">
+				<source>Name A–Z</source>
+				<target>Name A–Z</target>
+			</trans-unit>
+			<trans-unit id="module.sort.za" approved="yes">
+				<source>Name Z–A</source>
+				<target>Name Z–A</target>
+			</trans-unit>
+			<trans-unit id="module.overview.dragHint" approved="yes">
+				<source>Drag galleries with the mouse to change their order on the website.</source>
+				<target>Galerien mit der Maus verschieben, um die Reihenfolge auf der Website zu ändern.</target>
+			</trans-unit>
+			<trans-unit id="module.showImages" approved="yes">
+				<source>Show images</source>
+				<target>Bilder anzeigen</target>
+			</trans-unit>
+			<trans-unit id="module.noImages" approved="yes">
+				<source>No images yet</source>
+				<target>Noch keine Bilder</target>
+			</trans-unit>
+			<trans-unit id="module.badge.hidden" approved="yes">
+				<source>Hidden</source>
+				<target>Ausgeblendet</target>
+			</trans-unit>
+			<trans-unit id="module.badge.visible" approved="yes">
+				<source>Visible</source>
+				<target>Sichtbar</target>
+			</trans-unit>
+			<trans-unit id="module.card.position" approved="yes">
+				<source>Position %d</source>
+				<target>Position %d</target>
+			</trans-unit>
+			<trans-unit id="module.images.one" approved="yes">
+				<source>1 image</source>
+				<target>1 Bild</target>
+			</trans-unit>
+			<trans-unit id="module.images.count" approved="yes">
+				<source>%d images</source>
+				<target>%d Bilder</target>
+			</trans-unit>
+			<trans-unit id="module.images.hiddenCount" approved="yes">
+				<source>%d hidden</source>
+				<target>%d ausgeblendet</target>
+			</trans-unit>
+			<trans-unit id="module.card.created" approved="yes">
+				<source>created %s</source>
+				<target>angelegt %s</target>
+			</trans-unit>
+			<trans-unit id="module.upload.short" approved="yes">
+				<source>Upload</source>
+				<target>Hochladen</target>
+			</trans-unit>
+			<trans-unit id="module.uploadImages" approved="yes">
+				<source>Upload images</source>
+				<target>Bilder hochladen</target>
+			</trans-unit>
+			<trans-unit id="module.editGallery" approved="yes">
+				<source>Edit title, description, category</source>
+				<target>Titel, Beschreibung, Kategorie bearbeiten</target>
+			</trans-unit>
+			<trans-unit id="module.preview" approved="yes">
+				<source>Preview</source>
+				<target>Vorschau</target>
+			</trans-unit>
+			<trans-unit id="module.preview.disabled" approved="yes">
+				<source>Preview available once the gallery is visible</source>
+				<target>Vorschau erst nach Einblenden</target>
+			</trans-unit>
+			<trans-unit id="module.preview.overview" approved="yes">
+				<source>View on the website</source>
+				<target>Auf der Website ansehen</target>
+			</trans-unit>
+			<trans-unit id="module.preview.gallery" approved="yes">
+				<source>View gallery on the website</source>
+				<target>Galerie auf der Website ansehen</target>
+			</trans-unit>
+			<trans-unit id="module.overview.show" approved="yes">
+				<source>Show on the website</source>
+				<target>Auf der Website anzeigen</target>
+			</trans-unit>
+			<trans-unit id="module.overview.hide" approved="yes">
+				<source>Hide on the website</source>
+				<target>Auf der Website ausblenden</target>
+			</trans-unit>
+			<trans-unit id="module.overview.empty" approved="yes">
+				<source>No gallery found.</source>
+				<target>Keine Galerie gefunden.</target>
+			</trans-unit>
+			<trans-unit id="module.order.unsaved" approved="yes">
+				<source>The order has changed but is not saved yet.</source>
+				<target>Die Reihenfolge wurde geändert, ist aber noch nicht gespeichert.</target>
+			</trans-unit>
+			<trans-unit id="module.order.discard" approved="yes">
+				<source>Discard</source>
+				<target>Verwerfen</target>
+			</trans-unit>
+			<trans-unit id="module.order.save" approved="yes">
+				<source>Save order</source>
+				<target>Reihenfolge speichern</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.eyebrow" approved="yes">
+				<source>Gallery</source>
+				<target>Galerie</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.hiddenOnWebsite" approved="yes">
+				<source>hidden on the website</source>
+				<target>auf der Website ausgeblendet</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.visibleOnWebsite" approved="yes">
+				<source>visible on the website</source>
+				<target>auf der Website sichtbar</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.show" approved="yes">
+				<source>Show gallery</source>
+				<target>Galerie einblenden</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.hide" approved="yes">
+				<source>Hide gallery</source>
+				<target>Galerie ausblenden</target>
+			</trans-unit>
+			<trans-unit id="module.edit" approved="yes">
+				<source>Edit</source>
+				<target>Bearbeiten</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.hint" approved="yes">
+				<source>Drag images with the mouse to change their order – they appear in the same order on the website. Click an image to edit its title and caption.</source>
+				<target>Bilder mit der Maus verschieben, um die Reihenfolge zu ändern – so erscheinen sie auch auf der Website. Klick aufs Bild öffnet Bildtitel und Bildunterschrift zum Bearbeiten.</target>
+			</trans-unit>
+			<trans-unit id="module.image.editInfo" approved="yes">
+				<source>Edit image information</source>
+				<target>Bildinfos bearbeiten</target>
+			</trans-unit>
+			<trans-unit id="module.image.createInfo" approved="yes">
+				<source>Add image information</source>
+				<target>Bildinfos anlegen</target>
+			</trans-unit>
+			<trans-unit id="module.image.missing" approved="yes">
+				<source>File missing</source>
+				<target>Datei fehlt</target>
+			</trans-unit>
+			<trans-unit id="module.image.hidden" approved="yes">
+				<source>hidden</source>
+				<target>ausgeblendet</target>
+			</trans-unit>
+			<trans-unit id="module.image.show" approved="yes">
+				<source>Show image</source>
+				<target>Bild einblenden</target>
+			</trans-unit>
+			<trans-unit id="module.image.hide" approved="yes">
+				<source>Hide image</source>
+				<target>Bild ausblenden</target>
+			</trans-unit>
+			<trans-unit id="module.image.delete" approved="yes">
+				<source>Delete image</source>
+				<target>Bild löschen</target>
+			</trans-unit>
+			<trans-unit id="module.image.deleteConfirm" approved="yes">
+				<source>Delete this image permanently? The file will be removed from the server and cannot be restored.</source>
+				<target>Bild endgültig löschen? Die Datei wird vom Server entfernt und kann nicht wiederhergestellt werden.</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.empty" approved="yes">
+				<source>This gallery has no images yet.</source>
+				<target>In dieser Galerie sind noch keine Bilder.</target>
+			</trans-unit>
+			<trans-unit id="module.gallery.uploadNow" approved="yes">
+				<source>Upload images now</source>
+				<target>Jetzt Bilder hochladen</target>
+			</trans-unit>
+			<trans-unit id="module.back.allGalleries" approved="yes">
+				<source>All galleries</source>
+				<target>Alle Galerien</target>
+			</trans-unit>
+			<trans-unit id="module.back.gallery" approved="yes">
+				<source>Back to gallery</source>
+				<target>Zurück zur Galerie</target>
+			</trans-unit>
+			<trans-unit id="module.upload.inGallery" approved="yes">
+				<source>images in the gallery</source>
+				<target>Bilder in der Galerie</target>
+			</trans-unit>
+			<trans-unit id="module.upload.dropTitle" approved="yes">
+				<source>Drag images here</source>
+				<target>Bilder hierher ziehen</target>
+			</trans-unit>
+			<trans-unit id="module.upload.dropOr" approved="yes">
+				<source>or</source>
+				<target>oder</target>
+			</trans-unit>
+			<trans-unit id="module.upload.dropLink" approved="yes">
+				<source>choose from your computer</source>
+				<target>vom Computer auswählen</target>
+			</trans-unit>
+			<trans-unit id="module.upload.dropHint" approved="yes">
+				<source>JPG, PNG, WebP or HEIC · up to %d MB · uploading starts immediately</source>
+				<target>JPG, PNG, WebP oder HEIC · bis %d MB · der Upload startet sofort</target>
+			</trans-unit>
+			<trans-unit id="module.upload.note" approved="yes">
+				<source>Images are uploaded in the order shown here and added to the end of the gallery. You can change the order afterwards in the gallery by drag and drop.</source>
+				<target>Die Bilder werden in der Reihenfolge hochgeladen, in der sie hier erscheinen, und hinten an die Galerie angehängt. Die Reihenfolge können Sie danach in der Galerie per Drag &amp; Drop ändern.</target>
+			</trans-unit>
+			<trans-unit id="module.upload.toGallery" approved="yes">
+				<source>Go to gallery</source>
+				<target>Zur Galerie</target>
+			</trans-unit>
+			<trans-unit id="upload.waiting" approved="yes">
+				<source>waiting</source>
+				<target>wartet</target>
+			</trans-unit>
+			<trans-unit id="upload.summary" approved="yes">
+				<source>%1$d of %2$d uploaded</source>
+				<target>%1$d von %2$d hochgeladen</target>
+			</trans-unit>
+			<trans-unit id="upload.failedCount" approved="yes">
+				<source>%d failed</source>
+				<target>%d fehlgeschlagen</target>
+			</trans-unit>
+			<trans-unit id="upload.uploading" approved="yes">
+				<source>uploading …</source>
+				<target>wird hochgeladen …</target>
+			</trans-unit>
+			<trans-unit id="upload.processing" approved="yes">
+				<source>processing …</source>
+				<target>wird verarbeitet …</target>
+			</trans-unit>
+			<trans-unit id="upload.done" approved="yes">
+				<source>done</source>
+				<target>fertig</target>
+			</trans-unit>
+			<trans-unit id="upload.error" approved="yes">
+				<source>Error</source>
+				<target>Fehler</target>
+			</trans-unit>
+			<trans-unit id="upload.notPossible" approved="yes">
+				<source>not possible</source>
+				<target>nicht möglich</target>
+			</trans-unit>
+			<trans-unit id="upload.allowedTypes" approved="yes">
+				<source>Allowed are JPG, PNG, WebP and HEIC.</source>
+				<target>Erlaubt sind JPG, PNG, WebP und HEIC.</target>
+			</trans-unit>
+			<trans-unit id="upload.tooLarge" approved="yes">
+				<source>too large</source>
+				<target>zu groß</target>
+			</trans-unit>
+			<trans-unit id="upload.tooLargeDetail" approved="yes">
+				<source>%1$s – the maximum is %2$d MB.</source>
+				<target>%1$s – erlaubt sind maximal %2$d MB.</target>
+			</trans-unit>
+			<trans-unit id="upload.failedStatus" approved="yes">
+				<source>Upload failed (status %d).</source>
+				<target>Upload fehlgeschlagen (Status %d).</target>
+			</trans-unit>
+			<trans-unit id="upload.noConnection" approved="yes">
+				<source>No connection to the server.</source>
+				<target>Keine Verbindung zum Server.</target>
+			</trans-unit>
+			<trans-unit id="message.title.error" approved="yes">
+				<source>Error</source>
+				<target>Fehler</target>
+			</trans-unit>
+			<trans-unit id="message.title.saved" approved="yes">
+				<source>Saved</source>
+				<target>Gespeichert</target>
+			</trans-unit>
+			<trans-unit id="message.title.notSaved" approved="yes">
+				<source>Not saved</source>
+				<target>Nicht gespeichert</target>
+			</trans-unit>
+			<trans-unit id="message.title.deleted" approved="yes">
+				<source>Deleted</source>
+				<target>Gelöscht</target>
+			</trans-unit>
+			<trans-unit id="message.title.notDeleted" approved="yes">
+				<source>Not deleted</source>
+				<target>Nicht gelöscht</target>
+			</trans-unit>
+			<trans-unit id="message.noStoragePid" approved="yes">
+				<source>No storage PID configured (Settings &gt; Extension Configuration &gt; crgalerie).</source>
+				<target>Keine Storage-PID konfiguriert (Einstellungen &gt; Extension-Konfiguration &gt; crgalerie).</target>
+			</trans-unit>
+			<trans-unit id="message.galleriesSorted" approved="yes">
+				<source>The new order of the galleries has been saved and also applies to the website.</source>
+				<target>Die neue Reihenfolge der Galerien ist gespeichert und gilt auch auf der Website.</target>
+			</trans-unit>
+			<trans-unit id="message.imagesSorted" approved="yes">
+				<source>The new order has been saved and also applies to the website.</source>
+				<target>Die neue Reihenfolge ist gespeichert und gilt auch auf der Website.</target>
+			</trans-unit>
+			<trans-unit id="message.galleryHidden" approved="yes">
+				<source>The gallery is hidden on the website.</source>
+				<target>Die Galerie ist auf der Website ausgeblendet.</target>
+			</trans-unit>
+			<trans-unit id="message.galleryVisible" approved="yes">
+				<source>The gallery is visible on the website.</source>
+				<target>Die Galerie ist auf der Website sichtbar.</target>
+			</trans-unit>
+			<trans-unit id="message.imageVisible" approved="yes">
+				<source>The image is visible again.</source>
+				<target>Das Bild ist wieder sichtbar.</target>
+			</trans-unit>
+			<trans-unit id="message.imageHidden" approved="yes">
+				<source>The image is hidden.</source>
+				<target>Das Bild ist ausgeblendet.</target>
+			</trans-unit>
+			<trans-unit id="message.deleted.withFile" approved="yes">
+				<source>The image and its file have been deleted.</source>
+				<target>Das Bild und seine Datei wurden gelöscht.</target>
+			</trans-unit>
+			<trans-unit id="message.deleted.noFile" approved="yes">
+				<source>The image has been deleted.</source>
+				<target>Das Bild wurde gelöscht.</target>
+			</trans-unit>
+			<trans-unit id="message.deleted.fileInUse" approved="yes">
+				<source>Image removed. The file is still used elsewhere and is kept.</source>
+				<target>Bild entfernt. Die Datei wird noch an anderer Stelle verwendet und bleibt erhalten.</target>
+			</trans-unit>
+			<trans-unit id="message.deleted.fileNotDeleted" approved="yes">
+				<source>Image removed. The file could not be deleted from the server (missing permissions?).</source>
+				<target>Bild entfernt. Die Datei konnte nicht vom Server gelöscht werden (fehlende Rechte?).</target>
+			</trans-unit>
+			<trans-unit id="error.galleryNotFound" approved="yes">
+				<source>The gallery was not found.</source>
+				<target>Die Galerie wurde nicht gefunden.</target>
+			</trans-unit>
+			<trans-unit id="error.noPermission" approved="yes">
+				<source>No permission for this gallery.</source>
+				<target>Keine Berechtigung für diese Galerie.</target>
+			</trans-unit>
+			<trans-unit id="error.noWriteAccess" approved="yes">
+				<source>No write access to the gallery folder – please check the file mount.</source>
+				<target>Kein Schreibrecht im Galerie-Ordner – bitte Dateifreigabe prüfen.</target>
+			</trans-unit>
+			<trans-unit id="error.format" approved="yes">
+				<source>This file format is not supported. Allowed are JPG, PNG, WebP and HEIC.</source>
+				<target>Dieses Dateiformat wird nicht unterstützt. Erlaubt sind JPG, PNG, WebP und HEIC.</target>
+			</trans-unit>
+			<trans-unit id="error.heic" approved="yes">
+				<source>This server cannot convert HEIC images. Please export them as JPG.</source>
+				<target>HEIC-Bilder kann dieser Server nicht umwandeln. Bitte als JPG exportieren.</target>
+			</trans-unit>
+			<trans-unit id="error.pixel" approved="yes">
+				<source>The image is too large (more than 100 megapixels). Please export a smaller version.</source>
+				<target>Das Bild ist zu groß (mehr als 100 Megapixel). Bitte verkleinert exportieren.</target>
+			</trans-unit>
+			<trans-unit id="error.processorDisabled" approved="yes">
+				<source>Image processing is disabled in TYPO3.</source>
+				<target>Die Bildverarbeitung ist in TYPO3 deaktiviert.</target>
+			</trans-unit>
+			<trans-unit id="error.processing" approved="yes">
+				<source>The image could not be processed.</source>
+				<target>Das Bild konnte nicht verarbeitet werden.</target>
+			</trans-unit>
+			<trans-unit id="error.saveImage" approved="yes">
+				<source>The image could not be saved in the gallery.</source>
+				<target>Das Bild konnte nicht in der Galerie gespeichert werden.</target>
+			</trans-unit>
+			<trans-unit id="error.uploadFolder" approved="yes">
+				<source>The upload folder is not available – please check the extension configuration (uploadFolder).</source>
+				<target>Der Upload-Ordner ist nicht verfügbar – bitte die Extension-Konfiguration (uploadFolder) prüfen.</target>
+			</trans-unit>
+			<trans-unit id="error.generic" approved="yes">
+				<source>An error occurred during the upload.</source>
+				<target>Beim Hochladen ist ein Fehler aufgetreten.</target>
+			</trans-unit>
+			<trans-unit id="error.tooLarge" approved="yes">
+				<source>The file did not arrive completely or is too large (max. %d MB).</source>
+				<target>Die Datei ist nicht vollständig angekommen oder zu groß (max. %d MB).</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

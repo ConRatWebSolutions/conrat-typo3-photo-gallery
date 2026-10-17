@@ -1,0 +1,55 @@
+name: Release
+
+# Bei jedem Versions-Tag (v3.0.0, v3.0.0-beta.4 …):
+# 1. prüfen, dass Tag, composer.json (extra.typo3/cms.version) und ext_emconf.php dieselbe Version nennen
+# 2. nur bei finalen Versionen (vX.Y.Z – das TER kennt keine Vorabversionen) und gesetztem Secret TYPO3_API_TOKEN:
+#    Paket wie für Composer bauen (git archive, beachtet export-ignore aus .gitattributes) und per Tailor ins TER laden.
+# Packagist aktualisiert sich über den GitHub-Webhook selbst.
+# Manuell (Actions > Release > Run workflow, „Use workflow from“ = Tag): TER-Upload nachholen, z. B. nachdem das
+# Secret TYPO3_API_TOKEN gesetzt wurde.
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      TYPO3_API_TOKEN: ${{ secrets.TYPO3_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Versionen prüfen
+        id: version
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          composer_version=$(php -r '$c = json_decode(file_get_contents("composer.json"), true); echo $c["extra"]["typo3/cms"]["version"] ?? "";')
+          emconf_version=$(php -r '$_EXTKEY = "crgalerie"; include "ext_emconf.php"; echo $EM_CONF[$_EXTKEY]["version"];')
+          echo "Tag: $tag | composer.json: $composer_version | ext_emconf.php: $emconf_version"
+          # Vorabversionen (3.0.0-beta.4) tragen in den Dateien die Zielversion (3.0.0)
+          basis="${tag%%-*}"
+          if [ "$composer_version" != "$basis" ] || [ "$emconf_version" != "$basis" ]; then
+            echo "::error::Version in composer.json/ext_emconf.php passt nicht zum Tag $GITHUB_REF_NAME"
+            exit 1
+          fi
+          if [[ "$tag" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "ter=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "version=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Ins TER hochladen
+        if: steps.version.outputs.ter == 'true' && env.TYPO3_API_TOKEN != ''
+        run: |
+          composer global require typo3/tailor --no-interaction --no-progress
+          git archive --format=zip --output="$RUNNER_TEMP/crgalerie.zip" HEAD
+          ~/.composer/vendor/bin/tailor ter:publish \
+            --artefact="$RUNNER_TEMP/crgalerie.zip" \
+            --comment "Release ${{ steps.version.outputs.version }}, siehe CHANGELOG.md" \
+            "${{ steps.version.outputs.version }}" crgalerie
+
+      - name: Hinweis ohne TER-Upload
+        if: steps.version.outputs.ter != 'true' || env.TYPO3_API_TOKEN == ''
+        run: echo "Kein TER-Upload (Vorabversion oder Secret TYPO3_API_TOKEN nicht gesetzt)."

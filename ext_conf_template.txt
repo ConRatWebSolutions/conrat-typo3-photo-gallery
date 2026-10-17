@@ -1,0 +1,8 @@
+# cat=basic//10; type=int+; label=LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:extconf.storagePid
+storagePid = 0
+# cat=basic//20; type=int+; label=LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:extconf.previewPid
+previewPid = 0
+# cat=basic//30; type=string; label=LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:extconf.uploadFolder
+uploadFolder = 1:/galerien/
+# cat=basic//40; type=int+; label=LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:extconf.maxBildgroesse
+maxBildgroesse = 2560

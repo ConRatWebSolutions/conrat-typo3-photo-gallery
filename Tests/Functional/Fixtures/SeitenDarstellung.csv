@@ -1,0 +1,24 @@
+"pages"
+,"uid","pid","title","slug","doktype"
+,11,1,"Raster","/raster",1
+,12,1,"Spalten","/spalten",1
+,13,1,"Titelbild","/titelbild",1
+,14,1,"Ungueltig","/ungueltig",1
+,15,1,"Zwei Galerien","/zwei",1
+,16,1,"Doppelt","/doppelt",1
+,17,1,"Uebersicht ueber","/uebersicht-ueber",1
+,18,1,"Ebenen","/ebenen",1
+"tt_content"
+,"uid","pid","CType","header","header_layout","colPos","sorting","pi_flexform"
+,11,11,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.darstellung""><value index=""vDEF"">raster</value></field><field index=""settings.anzahlStart""><value index=""vDEF"">2</value></field></language></sheet></data></T3FlexForms>"
+,12,12,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.darstellung""><value index=""vDEF"">spalten</value></field><field index=""settings.anzahlStart""><value index=""vDEF"">0</value></field></language></sheet></data></T3FlexForms>"
+,13,13,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.darstellung""><value index=""vDEF"">titelbild</value></field></language></sheet></data></T3FlexForms>"
+,14,14,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.darstellung""><value index=""vDEF"">quatsch</value></field><field index=""settings.anzahlStart""><value index=""vDEF"">-5</value></field></language></sheet></data></T3FlexForms>"
+,15,15,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
+,16,15,"crgalerie_galerie","",0,0,2,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">2</value></field></language></sheet></data></T3FlexForms>"
+,17,16,"crgalerie_galerie","Sichtbarer Kopf",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
+,18,16,"crgalerie_galerie","Versteckter Kopf",100,0,2,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
+,19,17,"crgalerie_uebersicht","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.kachelstil""><value index=""vDEF"">ueber</value></field></language></sheet></data></T3FlexForms>"
+,20,18,"crgalerie_galerie","Kopf Ebene 1",1,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
+,21,18,"crgalerie_galerie","Kopf Ebene 3",3,0,2,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
+,22,18,"crgalerie_galerie","Kopf Ebene 5",5,0,3,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"

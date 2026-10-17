@@ -1,0 +1,5 @@
+name: conrat/crgalerie-test-seite
+label: 'crgalerie Test: Seite'
+dependencies:
+  - typo3/fluid-styled-content
+  - conrat/crgalerie

@@ -1,0 +1,7 @@
+/*
+ * crgalerie – nur ohne JavaScript geladen (<noscript><link>): zeigt die Bilder nach „anzahlStart“, die der Server mit
+ * hidden ausliefert, und blendet den Knopf „Alle anzeigen“ aus. Als eigene Datei statt <style>, weil eine Content
+ * Security Policy ohne style-src 'unsafe-inline' (TYPO3-Standard) Inline-Stylesheets blockiert.
+ */
+.crg .crg__bild[hidden] { display: list-item !important; }
+.crg .crg__mehr { display: none !important; }

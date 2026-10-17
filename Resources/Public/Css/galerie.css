@@ -1,0 +1,205 @@
+/*
+ * crgalerie – Grundstyling.
+ *
+ * Anpassen über CSS-Variablen an :root, .crg (Galerie) oder .crg-uebersicht (Übersicht), z. B.
+ *   :root { --crg-akzent: #b0002a; --crg-spalten-mobil: 1; }
+ * Die Datei setzt selbst keine dieser Variablen, sondern liest sie mit Standardwert (var(--crg-…, Standard))
+ * in interne Variablen (--_crg-…) um. Deshalb gewinnt eigenes CSS immer, egal in welcher Reihenfolge es geladen
+ * wird und egal ob an :root oder am Element gesetzt.
+ *
+ *   --crg-abstand           Abstand zwischen Bildern (8px)
+ *   --crg-radius            Eckenradius (4px)
+ *   --crg-akzent            Farbe für Knopf und Fokusrahmen (currentColor)
+ *   --crg-text-gedaempft    Farbe für Zusatztexte (#666)
+ *   --crg-spalten           Spalten ab 1024 px (Galerie 4, Übersicht 3)
+ *   --crg-spalten-tablet    Spalten 600–1023 px (Galerie 3, Übersicht 2)
+ *   --crg-spalten-mobil     Spalten unter 600 px (Galerie 2, Übersicht 1)
+ *   --crg-zeilenhoehe       Zeilenhöhe im Mosaik in Zeilen ab 600 px (220px)
+ *   --crg-zeilenhoehe-mobil Zeilenhöhe unter 600 px (100px)
+ */
+:where(.crg, .crg-uebersicht) {
+    --_crg-abstand: var(--crg-abstand, 8px);
+    --_crg-radius: var(--crg-radius, 4px);
+    --_crg-akzent: var(--crg-akzent, currentColor);
+    --_crg-text-gedaempft: var(--crg-text-gedaempft, #666);
+}
+:where(.crg) {
+    --_crg-spalten: var(--crg-spalten, 4);
+    --_crg-zeilenhoehe: var(--crg-zeilenhoehe, 220px);
+}
+:where(.crg-uebersicht) { --_crg-spalten: var(--crg-spalten, 3); }
+@media (max-width: 1023px) {
+    :where(.crg) { --_crg-spalten: var(--crg-spalten-tablet, 3); }
+    :where(.crg-uebersicht) { --_crg-spalten: var(--crg-spalten-tablet, 2); }
+}
+@media (max-width: 599px) {
+    :where(.crg) { --_crg-spalten: var(--crg-spalten-mobil, 2); --_crg-zeilenhoehe: var(--crg-zeilenhoehe-mobil, 100px); }
+    :where(.crg-uebersicht) { --_crg-spalten: var(--crg-spalten-mobil, 1); }
+}
+
+.crg,
+.crg-uebersicht {
+    font: inherit;
+    margin: 0 0 calc(var(--_crg-abstand) * 3);
+    padding: 0;
+}
+
+/* Robust gegen globale Regeln wie * { margin: 0 auto } */
+.crg *, .crg-uebersicht * { box-sizing: border-box; margin: 0; }
+
+/*
+ * Robust gegen Listen- und Linkregeln aus dem Projekt, z. B. .frame-default ul li { list-style: disc; padding: 4px 0 },
+ * .frame-default ul { padding-left: 25px }, .section-wrapper a { text-decoration: underline; font-weight: 700 } oder
+ * a span { text-decoration: underline }. Die doppelte Klasse hebt die Spezifität auf (0,2,x) und schlägt damit
+ * typische Regeln aus einer Klasse plus Elementen, ohne !important. Wer hier bewusst etwas ändern will, braucht
+ * ebenfalls zwei Klassen (z. B. .crg .crg__bild).
+ */
+.crg__liste.crg__liste { list-style: none; margin: 0; padding: 0; }
+.crg-uebersicht.crg-uebersicht { list-style: none; margin: 0 0 calc(var(--_crg-abstand) * 3); padding: 0; }
+.crg__bild.crg__bild,
+.crg-uebersicht__eintrag.crg-uebersicht__eintrag {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    background: none;
+}
+.crg__bild.crg__bild::before,
+.crg-uebersicht__eintrag.crg-uebersicht__eintrag::before { content: none; display: none; }
+.crg__bild.crg__bild::marker,
+.crg-uebersicht__eintrag.crg-uebersicht__eintrag::marker { content: none; }
+.crg__link.crg__link { text-decoration: none; }
+.crg-uebersicht__kachel.crg-uebersicht__kachel { color: inherit; font-weight: inherit; text-decoration: none; }
+.crg-uebersicht__kachel.crg-uebersicht__kachel span { text-decoration: none; }
+
+.crg__kopf { margin: 0 0 calc(var(--_crg-abstand) * 2); }
+.crg__titel { margin: 0 0 calc(var(--_crg-abstand) / 2); }
+.crg__beschreibung { margin: 0 0 calc(var(--_crg-abstand) / 2); }
+.crg__meta, .crg__credit, .crg__bildtext { color: var(--_crg-text-gedaempft); font-size: .875em; }
+
+.crg__bild[hidden] { display: none !important; }
+.crg__figur { margin: 0; }
+.crg__link { display: block; border-radius: var(--_crg-radius); overflow: hidden; }
+.crg__link img { display: block; width: 100%; height: auto; }
+.crg__link:focus-visible { outline: 3px solid var(--_crg-akzent); outline-offset: 2px; }
+.crg__bildtext .crg__credit { font-size: inherit; }
+.crg__bildtext { display: flex; flex-direction: column; gap: 2px; padding: 4px 0 0; }
+.crg__bildtitel { color: inherit; font-weight: 600; }
+.crg__lightboxtext[hidden] { display: none !important; }
+
+/* Raster */
+.crg--raster .crg__liste,
+.crg--titelbild .crg__liste {
+    display: grid;
+    grid-template-columns: repeat(var(--_crg-spalten), minmax(0, 1fr));
+    gap: var(--_crg-abstand);
+}
+.crg--raster .crg__link img,
+.crg--titelbild .crg__link img { aspect-ratio: 4 / 3; object-fit: cover; }
+
+/* Großes Titelbild + Raster: Größe des ersten Bildes hängt nicht vom Bildinhalt ab (Hochformat bläht die
+   Zeilen sonst auf). Das Bild liegt absolut im Link; der Link füllt die Zelle und ist mindestens 4:3 hoch,
+   damit er auf schmalen Bildschirmen (Titelbild allein in der Zeile) nicht zusammenfällt. */
+.crg--titelbild .crg__bild:first-child { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; }
+.crg--titelbild .crg__bild:first-child .crg__figur { display: flex; flex-direction: column; flex: 1 0 auto; }
+.crg--titelbild .crg__bild:first-child .crg__link { position: relative; flex: 1 0 auto; aspect-ratio: 4 / 3; }
+.crg--titelbild .crg__bild:first-child .crg__link img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+}
+
+/* Mosaik in Zeilen: Breite proportional zum Seitenverhältnis, letzte Zeile nicht gestreckt */
+.crg--zeilen .crg__liste { display: flex; flex-wrap: wrap; gap: var(--_crg-abstand); }
+.crg--zeilen .crg__liste::after { content: ''; flex-grow: 999999; }
+.crg--zeilen .crg__bild {
+    flex-grow: calc(var(--crg-verhaeltnis, 1.5) * 100);
+    flex-basis: calc(var(--crg-verhaeltnis, 1.5) * var(--_crg-zeilenhoehe));
+}
+.crg--zeilen .crg__link img { aspect-ratio: var(--crg-verhaeltnis, 1.5); object-fit: cover; }
+
+/* Mosaik in Spalten */
+.crg--spalten .crg__liste { columns: var(--_crg-spalten); column-gap: var(--_crg-abstand); }
+.crg--spalten .crg__bild { break-inside: avoid; margin: 0 0 var(--_crg-abstand); }
+
+/* „Alle anzeigen“ (zwei Klassen: robust gegen Projektregeln für button) */
+.crg .crg__mehr {
+    display: block;
+    margin: calc(var(--_crg-abstand) * 2) auto 0;
+    padding: .6em 1.4em;
+    font: inherit;
+    color: var(--_crg-akzent);
+    background: transparent;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.crg .crg__mehr[hidden] { display: none; }
+.crg .crg__mehr:focus-visible { outline: 3px solid var(--_crg-akzent); outline-offset: 2px; }
+
+.crg-zurueck.crg-zurueck { margin: 0 0 var(--crg-abstand, 8px); padding: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+    .crg *, .crg-uebersicht * { transition: none !important; animation: none !important; }
+}
+
+/* Übersicht */
+.crg-uebersicht {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(var(--_crg-spalten), minmax(0, 1fr));
+    gap: calc(var(--_crg-abstand) * 2);
+}
+.crg-uebersicht__kachel { display: block; position: relative; border-radius: var(--_crg-radius); }
+.crg-uebersicht__kachel:focus-visible { outline: 3px solid var(--_crg-akzent); outline-offset: 3px; }
+.crg-uebersicht__medien { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--_crg-radius); background: rgba(0, 0, 0, .06); }
+.crg-uebersicht__bild { display: block; width: 100%; height: 100%; object-fit: cover; }
+.crg-uebersicht__text { display: block; }
+.crg-uebersicht__titel { display: block; font-weight: 600; }
+.crg-uebersicht__meta { display: block; color: var(--_crg-text-gedaempft); font-size: .875em; }
+
+/* Unterstrichener Titel als Hinweis bei Hover und Tastaturfokus (zusätzlich zum Fokusrahmen) */
+.crg-uebersicht__kachel.crg-uebersicht__kachel:is(:hover, :focus-visible) .crg-uebersicht__titel { text-decoration: underline; }
+
+/* Titel unter dem Bild */
+.crg-uebersicht--unten .crg-uebersicht__text { padding: calc(var(--_crg-abstand) * .75) 0 0; }
+.crg-uebersicht--unten .crg-uebersicht__datum::before {
+    content: ' · ';
+    content: ' · ' / ''; /* Trennpunkt nicht vorlesen (ältere Browser nutzen die Zeile davor) */
+}
+
+/* Titel über dem Bild */
+.crg-uebersicht--ueber .crg-uebersicht__text {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: calc(var(--_crg-abstand) * 3) calc(var(--_crg-abstand) * 1.5) calc(var(--_crg-abstand) * 1.25);
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8) 45%);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+    border-radius: 0 0 var(--_crg-radius) var(--_crg-radius);
+}
+.crg-uebersicht--ueber .crg-uebersicht__meta { color: rgba(255, 255, 255, .85); }
+
+/* Anzahl als Plakette oben rechts (nur „über“); die Textfassung bleibt für Screenreader erhalten */
+.crg-uebersicht__plakette { display: none; }
+.crg-uebersicht--ueber .crg-uebersicht__plakette {
+    display: block;
+    position: absolute;
+    top: var(--_crg-abstand); right: var(--_crg-abstand);
+    padding: 2px 8px;
+    font-size: .75em;
+    color: #fff;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 999px;
+}
+.crg-uebersicht--ueber .crg-uebersicht__anzahl,
+.crg-uebersicht__trenner {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}

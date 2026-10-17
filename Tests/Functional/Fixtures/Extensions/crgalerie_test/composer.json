@@ -1,0 +1,13 @@
+{
+    "name": "conrat/crgalerie-test",
+    "type": "typo3-cms-extension",
+    "description": "crgalerie Test - Seiten-TypoScript für Functional Tests",
+    "require": {
+        "typo3/cms-core": "^14.3"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "crgalerie_test"
+        }
+    }
+}

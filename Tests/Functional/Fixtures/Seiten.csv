@@ -1,0 +1,13 @@
+"pages"
+,"uid","pid","title","slug","doktype","is_siteroot"
+,1,0,"Start","/",1,1
+,2,1,"Galerie","/galerie",1,0
+,3,1,"Uebersicht","/uebersicht",1,0
+,4,1,"Landschaft","/landschaft",1,0
+,5,1,"Versteckt","/versteckt",1,0
+"tt_content"
+,"uid","pid","CType","header","colPos","pi_flexform"
+,1,2,"crgalerie_galerie","Galerie fest",0,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.showDescription""><value index=""vDEF"">3</value></field><field index=""settings.order""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
+,2,3,"crgalerie_uebersicht","Alle Galerien",0,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.category""><value index=""vDEF"">0</value></field></language></sheet></data></T3FlexForms>"
+,3,4,"crgalerie_uebersicht","Landschaft",0,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.category""><value index=""vDEF"">2</value></field></language></sheet></data></T3FlexForms>"
+,4,5,"crgalerie_galerie","Versteckte Galerie",0,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">3</value></field></language></sheet></data></T3FlexForms>"

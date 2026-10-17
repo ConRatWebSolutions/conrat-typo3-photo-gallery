@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:crg="http://typo3.org/ns/Conrat/Crgalerie/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="main">
+    <f:render partial="Galerie/Assets" arguments="{cssEinbinden: cssEinbinden, lightbox: 0}" />
+    <ul class="crg-uebersicht crg-uebersicht--{kachelstil}">
+        <f:for each="{galerien}" as="galerie">
+            <li class="crg-uebersicht__eintrag">
+                <f:link.action action="show" arguments="{galerie: galerie.uid}" class="crg-uebersicht__kachel">
+                    <span class="crg-uebersicht__medien">
+                        <f:if condition="{galerie.erstesBild}">
+                            <crg:bildQuellen datei="{galerie.erstesBild.datei}" breiten="{0: 400, 1: 800}" gross="0" as="q">
+                                <img class="crg-uebersicht__bild" src="{q.src}" srcset="{q.srcset}" sizes="(min-width: 1024px) 33vw, (min-width: 600px) 50vw, 100vw" width="{q.breite}" height="{q.hoehe}" alt="" loading="lazy" decoding="async" />
+                            </crg:bildQuellen>
+                        </f:if>
+                    </span>
+                    <span class="crg-uebersicht__plakette" aria-hidden="true">{galerie.anzahlBilder}</span>
+                    <span class="crg-uebersicht__text">
+                        <span class="crg-uebersicht__titel">{galerie.titel}</span><span class="crg-uebersicht__trenner">, </span>
+                        <span class="crg-uebersicht__meta">
+                            <span class="crg-uebersicht__anzahl"><f:if condition="{galerie.anzahlBilder} == 1"><f:then><f:translate key="frontend.photos.one" /></f:then><f:else><f:translate key="frontend.photos.many" arguments="{0: galerie.anzahlBilder}" /></f:else></f:if></span><f:if condition="{galerie.aufnahmezeitpunkt}"><span class="crg-uebersicht__trenner">, </span><span class="crg-uebersicht__datum"><f:format.date date="{galerie.aufnahmezeitpunkt}" pattern="MMMM yyyy" /></span></f:if>
+                        </span>
+                    </span>
+                </f:link.action>
+            </li>
+        </f:for>
+    </ul>
+</f:section>
+</html>

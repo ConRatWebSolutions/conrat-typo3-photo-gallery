@@ -1,0 +1,73 @@
+{
+    "name": "conrat/crgalerie",
+    "type": "typo3-cms-extension",
+    "description": "ConRat Photo Gallery - image galleries maintained centrally in a backend module, with responsive images and an accessible lightbox",
+    "license": "GPL-2.0-or-later",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "gallery",
+        "galerie",
+        "lightbox",
+        "photoswipe",
+        "responsive images"
+    ],
+    "homepage": "https://github.com/ConRatWebSolutions/conrat-typo3-photo-gallery",
+    "authors": [
+        {
+            "name": "ConRat WebSolutions",
+            "email": "info@conrat.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ConRatWebSolutions/conrat-typo3-photo-gallery/issues",
+        "source": "https://github.com/ConRatWebSolutions/conrat-typo3-photo-gallery"
+    },
+    "require": {
+        "php": "^8.2",
+        "typo3/cms-backend": "^14.3",
+        "typo3/cms-core": "^14.3",
+        "typo3/cms-extbase": "^14.3",
+        "typo3/cms-fluid": "^14.3",
+        "typo3/cms-frontend": "^14.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Conrat\\Crgalerie\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Conrat\\Crgalerie\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "bin-dir": ".Build/bin",
+        "vendor-dir": ".Build/vendor",
+        "sort-packages": true,
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "crgalerie",
+            "web-dir": ".Build/Web",
+            "version": "3.0.0",
+            "Package": {
+                "providesPackages": {}
+            }
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.5",
+        "saschaegerer/phpstan-typo3": "^3.1",
+        "typo3/cms-filemetadata": "^14.3",
+        "typo3/cms-fluid-styled-content": "^14.3",
+        "typo3/cms-install": "^14.3",
+        "typo3/testing-framework": "^9.7"
+    }
+}

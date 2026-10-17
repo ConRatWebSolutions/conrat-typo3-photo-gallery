@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Module" />
+
+<f:section name="Content">
+    <div class="crg crg-upload" data-crg-upload
+         data-upload-uri="{uploadUri}"
+         data-gal="{gal}"
+         data-max-mb="{maxMb}">
+
+        <header class="crg-head">
+          <div>
+            <p class="crg-eyebrow"><f:translate key="module.uploadImages" /></p>
+            <h1 class="crg-title">{galerie.titel}</h1>
+            <p class="crg-sub">
+                <span data-crg-count="{bildAnzahl}">{bildAnzahl}</span> <f:translate key="module.upload.inGallery" />
+                <f:if condition="{galerie.status} == 'fhidden'">
+                    <span class="crg-badge crg-badge--muted"><f:translate key="module.image.hidden" /></span>
+                </f:if>
+            </p>
+          </div>
+        </header>
+
+        <label class="crg-drop" data-crg-drop>
+            <input type="file" class="crg-drop__input" data-crg-input multiple accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.heic,.heif" />
+            <span class="crg-drop__icon"><core:icon identifier="actions-upload" size="large" /></span>
+            <span class="crg-drop__title"><f:translate key="module.upload.dropTitle" /></span>
+            <span class="crg-drop__text"><f:translate key="module.upload.dropOr" /> <span class="crg-drop__link"><f:translate key="module.upload.dropLink" /></span></span>
+            <span class="crg-drop__hint"><f:translate key="module.upload.dropHint" arguments="{0: maxMb}" /></span>
+        </label>
+
+        <p class="crg-note">
+            <core:icon identifier="actions-info-circle" size="small" />
+            <f:translate key="module.upload.note" />
+        </p>
+
+        <section class="crg-queue" data-crg-queue hidden>
+            <div class="crg-queue__head">
+                <strong data-crg-summary></strong>
+                <div class="crg-progress crg-progress--total"><span data-crg-total-bar></span></div>
+            </div>
+            <ol class="crg-list" data-crg-list></ol>
+        </section>
+
+        <div class="crg-actions" data-crg-actions hidden>
+            <a href="{galleryUri}" class="btn btn-primary">
+                <core:icon identifier="actions-image" size="small" /> <f:translate key="module.upload.toGallery" />
+            </a>
+        </div>
+
+        <template data-crg-item-template>
+            <li class="crg-item is-waiting">
+                <div class="crg-item__thumb"><img alt="" /></div>
+                <div class="crg-item__body">
+                    <div class="crg-item__row">
+                        <span class="crg-item__name"></span>
+                        <span class="crg-item__status"><f:translate key="upload.waiting" /></span>
+                    </div>
+                    <div class="crg-progress"><span></span></div>
+                    <div class="crg-item__meta"></div>
+                </div>
+            </li>
+        </template>
+    </div>
+</f:section>
+</html>
