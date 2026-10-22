@@ -22,7 +22,7 @@ overview :file:`Templates/Uebersicht/List.html`.
 Variables of a gallery: ``galerie`` (gallery object), ``bilder`` (list with
 ``datei``, ``titel``, ``beschreibung``, ``credit``), ``showDescription``
 (0–3), ``darstellung``, ``anzahlStart``, ``sizes``, ``sizesTitel``,
-``cssEinbinden``, ``elementUid``, ``titelEbene`` (2–6). In the overview:
+``cssEinbinden``, ``fotoanzahlZeigen``, ``elementUid``, ``titelEbene`` (2–6). In the overview:
 ``galerien`` (with ``titel``, ``erstesBild``, ``anzahlBilder``) and
 ``kachelstil``.
 

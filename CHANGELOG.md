@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.1.0
+
+- **Neu:** Die Zeile „21 Fotos“ über einer Galerie lässt sich ausblenden – als Standard per Site Setting
+  `crgalerie.frontend.photoCount: false` und je Inhaltselement im Reiter „Darstellung“ („Standard der Site“,
+  „Anzeigen“, „Ausblenden“). Datum und Fotograf bleiben sichtbar; ohne beides entfällt die Zeile ganz.
+- Die Fotoanzahl steht im Template in `<span class="crg__anzahl">`; neue Template-Variable `fotoanzahlZeigen`.
+  Überschriebene Templates von `Partials/Galerie/Bilder.html` zeigen die Anzahl weiterhin immer.
+
 ## 3.0.0 (17.10.2026)
 
 Erste öffentliche Version.

@@ -16,7 +16,9 @@
         <f:if condition="{galerie.beschreibung}">
             <p class="crg__beschreibung">{galerie.beschreibung}</p>
         </f:if>
-        <p class="crg__meta"><f:if condition="{anzahl} == 1"><f:then><f:translate key="frontend.photos.one" /></f:then><f:else><f:translate key="frontend.photos.many" arguments="{0: anzahl}" /></f:else></f:if><f:if condition="{galerie.aufnahmezeitpunkt}"> · <f:format.date date="{galerie.aufnahmezeitpunkt}" pattern="MMMM yyyy" /></f:if><f:if condition="{galerie.fotograf}"> · <f:translate key="frontend.photographer" arguments="{0: galerie.fotograf}" /></f:if></p>
+        <f:if condition="{fotoanzahlZeigen} || {galerie.aufnahmezeitpunkt} || {galerie.fotograf}">
+            <p class="crg__meta"><f:if condition="{fotoanzahlZeigen}"><span class="crg__anzahl"><f:if condition="{anzahl} == 1"><f:then><f:translate key="frontend.photos.one" /></f:then><f:else><f:translate key="frontend.photos.many" arguments="{0: anzahl}" /></f:else></f:if></span></f:if><f:if condition="{galerie.aufnahmezeitpunkt}"><f:if condition="{fotoanzahlZeigen}"> · </f:if><f:format.date date="{galerie.aufnahmezeitpunkt}" pattern="MMMM yyyy" /></f:if><f:if condition="{galerie.fotograf}"><f:if condition="{fotoanzahlZeigen} || {galerie.aufnahmezeitpunkt}"> · </f:if><f:translate key="frontend.photographer" arguments="{0: galerie.fotograf}" /></f:if></p>
+        </f:if>
     </header>
     <ul class="crg__liste" data-crg-anzahl-start="{anzahlStart}">
         <f:for each="{bilder}" as="bild" iteration="it">

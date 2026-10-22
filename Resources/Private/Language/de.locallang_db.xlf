@@ -175,6 +175,22 @@
 				<source>More images appear after clicking “Show all X photos”.</source>
 				<target>Weitere Bilder erscheinen nach Klick auf „Alle X Fotos anzeigen“.</target>
 			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl" approved="yes">
+				<source>Number of photos above the gallery</source>
+				<target>Fotoanzahl über der Galerie</target>
+			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl.site" approved="yes">
+				<source>Site default</source>
+				<target>Standard der Site</target>
+			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl.show" approved="yes">
+				<source>Show</source>
+				<target>Anzeigen</target>
+			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl.hide" approved="yes">
+				<source>Hide</source>
+				<target>Ausblenden</target>
+			</trans-unit>
 			<trans-unit id="flexform.kachelstil" approved="yes">
 				<source>Overview tiles</source>
 				<target>Kacheln der Übersicht</target>
@@ -242,6 +258,14 @@
 			<trans-unit id="settings.css.description" approved="yes">
 				<source>Disable if the project provides its own CSS for the gallery. The basic lightbox CSS stays active.</source>
 				<target>Aus, wenn das Projekt eigenes CSS für die Galerie liefert. Das Grund-CSS der Lightbox bleibt aktiv.</target>
+			</trans-unit>
+			<trans-unit id="settings.photoCount" approved="yes">
+				<source>Show number of photos</source>
+				<target>Fotoanzahl anzeigen</target>
+			</trans-unit>
+			<trans-unit id="settings.photoCount.description" approved="yes">
+				<source>Default for the line “21 photos” above a gallery. Content elements can override it.</source>
+				<target>Standard für die Zeile „21 Fotos“ über einer Galerie. Inhaltselemente können ihn überschreiben.</target>
 			</trans-unit>
 		</body>
 	</file>

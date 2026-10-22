@@ -53,6 +53,8 @@ vendor/bin/typo3 extension:setup
    - `crgalerie.pageTitle` – page title when a gallery is shown, e.g. `{galerie} – Photo gallery`
    - `crgalerie.metadata.creditField` – author column in `sys_file_metadata`, e.g. `creator`
    - `crgalerie.metadata.licenseField` – license column, e.g. `copyright`
+   - `crgalerie.frontend.photoCount` – set to `false` to hide the line “21 photos” above galleries by default;
+     content elements can override it (tab “Display”)
    - `crgalerie.frontend.css` – set to `false` to use your own CSS (the lightbox CSS is always loaded)
 
 ### Limitations
@@ -196,7 +198,7 @@ plugin.tx_crgalerie.view {
 The template for a gallery is `Partials/Galerie/Bilder.html`, for the overview `Templates/Uebersicht/List.html`.
 
 Variables: `galerie` (gallery object), `bilder` (list with `datei`, `titel`, `beschreibung`, `credit`),
-`showDescription` (0–3), `darstellung`, `anzahlStart`, `sizes`, `sizesTitel`, `cssEinbinden`, `elementUid`,
+`showDescription` (0–3), `darstellung`, `anzahlStart`, `sizes`, `sizesTitel`, `cssEinbinden`, `fotoanzahlZeigen`, `elementUid`,
 `titelEbene` (2–6); in the overview `galerien` (with `titel`, `erstesBild`, `anzahlBilder`) and `kachelstil`.
 
 The ViewHelper `<crg:bildQuellen datei="{…}" as="quellen">` (namespace `Conrat\Crgalerie\ViewHelpers`) provides

@@ -124,6 +124,24 @@ final class DarstellungTest extends FunctionalTestCase
     }
 
     #[Test]
+    public function fotoanzahlLaesstSichImElementAusblenden(): void
+    {
+        $html = $this->seite('/ohne-anzahl');
+        self::assertStringNotContainsString('3 Fotos', $html);
+        // ohne Datum und Fotograf bleibt keine leere Meta-Zeile stehen
+        self::assertStringNotContainsString('crg__meta', $html);
+    }
+
+    #[Test]
+    public function fotoanzahlFolgtSiteEinstellungUndElementUeberschreibtSie(): void
+    {
+        $this->get(SiteWriter::class)->writeSettings('main', ['crgalerie' => ['frontend' => ['photoCount' => false]]]);
+        $this->get(\TYPO3\CMS\Core\Cache\CacheManager::class)->flushCaches();
+        self::assertStringNotContainsString('3 Fotos', $this->seite('/galerie'));
+        self::assertStringContainsString('<span class="crg__anzahl">3 Fotos</span>', $this->seite('/mit-anzahl'));
+    }
+
+    #[Test]
     public function seiteOhneGalerieBindetNichtsEin(): void
     {
         self::assertStringNotContainsString('crgalerie/Resources/Public', $this->seite('/'));

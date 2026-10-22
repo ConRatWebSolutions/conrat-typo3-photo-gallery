@@ -92,6 +92,11 @@ Options in the tab :guilabel:`Display` (both elements):
     Default 12. Further images appear after a click on
     :guilabel:`Show all X photos`.
 
+:guilabel:`Number of photos above the gallery`
+    Shows or hides the line “21 photos”. :guilabel:`Site default` follows the
+    site setting ``crgalerie.frontend.photoCount``. Date and photographer stay
+    visible.
+
 :guilabel:`Text below the images`
     None, caption, image title, or image title and caption.
 

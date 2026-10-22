@@ -55,7 +55,7 @@
         "typo3/cms": {
             "extension-key": "crgalerie",
             "web-dir": ".Build/Web",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "Package": {
                 "providesPackages": {}
             }

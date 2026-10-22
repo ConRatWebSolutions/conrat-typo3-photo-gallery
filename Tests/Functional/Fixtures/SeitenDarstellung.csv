@@ -8,6 +8,8 @@
 ,16,1,"Doppelt","/doppelt",1
 ,17,1,"Uebersicht ueber","/uebersicht-ueber",1
 ,18,1,"Ebenen","/ebenen",1
+,19,1,"Ohne Anzahl","/ohne-anzahl",1
+,20,1,"Mit Anzahl","/mit-anzahl",1
 "tt_content"
 ,"uid","pid","CType","header","header_layout","colPos","sorting","pi_flexform"
 ,11,11,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.darstellung""><value index=""vDEF"">raster</value></field><field index=""settings.anzahlStart""><value index=""vDEF"">2</value></field></language></sheet></data></T3FlexForms>"
@@ -22,3 +24,5 @@
 ,20,18,"crgalerie_galerie","Kopf Ebene 1",1,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
 ,21,18,"crgalerie_galerie","Kopf Ebene 3",3,0,2,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
 ,22,18,"crgalerie_galerie","Kopf Ebene 5",5,0,3,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"
+,23,19,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.fotoanzahl""><value index=""vDEF"">0</value></field></language></sheet></data></T3FlexForms>"
+,24,20,"crgalerie_galerie","",0,0,1,"<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes"" ?><T3FlexForms><data><sheet index=""Grundeinstellungen""><language index=""lDEF""><field index=""settings.galerie""><value index=""vDEF"">1</value></field></language></sheet><sheet index=""Anzeigeeinstellungen""><language index=""lDEF""><field index=""settings.fotoanzahl""><value index=""vDEF"">1</value></field></language></sheet></data></T3FlexForms>"

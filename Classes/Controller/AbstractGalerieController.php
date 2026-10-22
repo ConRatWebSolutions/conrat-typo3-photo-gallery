@@ -68,6 +68,7 @@ abstract class AbstractGalerieController extends ActionController
             'sizes' => $darstellung === 'zeilen' ? ZeilenSizesViewHelper::sizes(1.5) : self::SIZES_RASTER,
             'sizesTitel' => self::SIZES_TITEL,
             'cssEinbinden' => $this->cssEinbinden(),
+            'fotoanzahlZeigen' => $this->fotoanzahlZeigen(),
             // eindeutige ids, auch wenn dieselbe Galerie mehrfach auf einer Seite steht
             'elementUid' => (int)($element['uid'] ?? 0) ?: (int)$galerie->getUid(),
             'titelEbene' => $this->titelEbene($element),
@@ -119,6 +120,22 @@ abstract class AbstractGalerieController extends ActionController
             return true;
         }
         return (bool)$site->getSettings()->get('crgalerie.frontend.css', true);
+    }
+
+    /**
+     * Zeile „21 Fotos“ über der Galerie: FlexForm „1“/„0“ überschreibt die Site-Einstellung, leer folgt ihr.
+     */
+    protected function fotoanzahlZeigen(): bool
+    {
+        $wert = (string)($this->settings['fotoanzahl'] ?? '');
+        if ($wert === '1' || $wert === '0') {
+            return $wert === '1';
+        }
+        $site = $this->request->getAttribute('site');
+        if (!$site instanceof Site) {
+            return true;
+        }
+        return (bool)$site->getSettings()->get('crgalerie.frontend.photoCount', true);
     }
 
     protected function markiereCache(): void

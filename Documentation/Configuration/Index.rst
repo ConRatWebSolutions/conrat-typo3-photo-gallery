@@ -44,6 +44,10 @@ Set in :guilabel:`Site Management > Settings` or in
     Column in ``sys_file_metadata`` that holds the license, e.g.
     ``copyright``. Empty: no license.
 
+``crgalerie.frontend.photoCount``
+    ``false`` hides the line “21 photos” above galleries by default (since
+    3.1.0). Content elements can override it in the tab :guilabel:`Display`.
+
 ``crgalerie.frontend.css``
     ``false`` disables the bundled gallery CSS (the basic lightbox CSS stays).
     Your CSS must then contain at least

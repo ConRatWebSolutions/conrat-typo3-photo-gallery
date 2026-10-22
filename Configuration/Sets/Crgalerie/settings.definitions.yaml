@@ -27,3 +27,9 @@ settings:
     category: crgalerie
     type: bool
     default: true
+  crgalerie.frontend.photoCount:
+    label: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.photoCount'
+    description: 'LLL:EXT:crgalerie/Resources/Private/Language/locallang_db.xlf:settings.photoCount.description'
+    category: crgalerie
+    type: bool
+    default: true

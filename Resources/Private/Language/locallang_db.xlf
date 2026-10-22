@@ -132,6 +132,18 @@
 			<trans-unit id="flexform.anzahlStart.description">
 				<source>More images appear after clicking “Show all X photos”.</source>
 			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl">
+				<source>Number of photos above the gallery</source>
+			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl.site">
+				<source>Site default</source>
+			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl.show">
+				<source>Show</source>
+			</trans-unit>
+			<trans-unit id="flexform.fotoanzahl.hide">
+				<source>Hide</source>
+			</trans-unit>
 			<trans-unit id="flexform.kachelstil">
 				<source>Overview tiles</source>
 			</trans-unit>
@@ -182,6 +194,12 @@
 			</trans-unit>
 			<trans-unit id="settings.css.description">
 				<source>Disable if the project provides its own CSS for the gallery. The basic lightbox CSS stays active.</source>
+			</trans-unit>
+			<trans-unit id="settings.photoCount">
+				<source>Show number of photos</source>
+			</trans-unit>
+			<trans-unit id="settings.photoCount.description">
+				<source>Default for the line “21 photos” above a gallery. Content elements can override it.</source>
 			</trans-unit>
 		</body>
 	</file>
